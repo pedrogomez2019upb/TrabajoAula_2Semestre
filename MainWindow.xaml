@@ -57,7 +57,7 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <TextBox x:Name="login" HorizontalAlignment="Left" Height="23" Margin="658,0,0,0" TextWrapping="Wrap" Text="Login: Administrador" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="login" HorizontalAlignment="Left" Height="23" Margin="659,10,0,0" TextWrapping="Wrap" Text="Login: Administrador" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
 
     </Grid>
 </Window>
