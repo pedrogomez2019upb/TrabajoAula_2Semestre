@@ -52,9 +52,9 @@
                     <Image x:Name="fotoUsuario" HorizontalAlignment="Left" Height="100" Margin="32,35,0,0" VerticalAlignment="Top" Width="100" Source="user_logo.png"/>
                     <Image HorizontalAlignment="Left" Height="100" Margin="32,234,0,0" VerticalAlignment="Top" Width="100" Source="26195301_325619834599532_1553341167795247867_n.jpg"/>
                     <Label x:Name="labelUsuario" Content="Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="232,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-                    <GroupBox x:Name="datosUsuario" Grid.Column="1" Header="Datos" HorizontalAlignment="Left" Height="284" Margin="52,46,0,0" VerticalAlignment="Top" Width="489">
-                        <Label x:Name="labelNombre" Content="Nombre" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top" Width="69"/>
-                    </GroupBox>
+                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,86,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="labelNombre" Content="Nombre:" Grid.Column="1" HorizontalAlignment="Left" Margin="47,86,0,0" VerticalAlignment="Top"/>
+
                 </Grid>
             </TabItem>
         </TabControl>
