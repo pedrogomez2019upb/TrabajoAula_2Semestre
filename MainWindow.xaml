@@ -15,7 +15,7 @@
                         <ColumnDefinition Width="653*"/>
                     </Grid.ColumnDefinitions>
                     <ListBox HorizontalAlignment="Left" Height="347" Margin="10,10,0,0" VerticalAlignment="Top" Width="725" Background="#FFFFDBC2" BorderBrush="Black" Grid.ColumnSpan="2">
-                        <Rectangle Fill="#FFF4F4F5" Height="22" Stroke="Black" Width="68"/>
+                        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Cantidad" VerticalAlignment="Top" Width="56" TextAlignment="Center"/>
                     </ListBox>
                 </Grid>
             </TabItem>
@@ -67,7 +67,6 @@
             </TabItem>
         </TabControl>
         <TextBox x:Name="login" HorizontalAlignment="Left" Height="23" Margin="659,10,0,0" TextWrapping="Wrap" Text="Login: Administrador" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
-        <Label Content="cantidad" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,46,0,0" BorderBrush="#F9080606"/>
 
     </Grid>
 </Window>
