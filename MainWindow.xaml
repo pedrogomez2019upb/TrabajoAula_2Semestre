@@ -49,7 +49,7 @@
                         <ColumnDefinition Width="551*"/>
                     </Grid.ColumnDefinitions>
                     <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-                    <Image x:Name="fotoUsuario" HorizontalAlignment="Left" Height="100" Margin="32,63,0,0" VerticalAlignment="Top" Width="100" Source="user_logo.png"/>
+                    <Image x:Name="fotoUsuario" HorizontalAlignment="Left" Height="100" Margin="439,29,0,0" VerticalAlignment="Top" Width="100" Source="user_logo.png" Grid.Column="1"/>
                     <Image HorizontalAlignment="Left" Height="100" Margin="32,234,0,0" VerticalAlignment="Top" Width="100" Source="26195301_325619834599532_1553341167795247867_n.jpg"/>
                     <Label x:Name="labelUsuario" Content="Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="232,18,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
                     <Label x:Name="labelNombre" Content="Nombre:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="57"/>
