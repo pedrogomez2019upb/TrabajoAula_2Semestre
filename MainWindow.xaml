@@ -52,7 +52,7 @@
                     <Image x:Name="fotoUsuario" HorizontalAlignment="Left" Height="100" Margin="32,63,0,0" VerticalAlignment="Top" Width="100" Source="user_logo.png"/>
                     <Image HorizontalAlignment="Left" Height="100" Margin="32,234,0,0" VerticalAlignment="Top" Width="100" Source="26195301_325619834599532_1553341167795247867_n.jpg"/>
                     <Label x:Name="labelUsuario" Content="Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="232,18,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-                    <Label x:Name="labelNombre" Content="Nombre:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Width="57"/>
+                    <Label x:Name="labelNombre" Content="Nombre:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="57"/>
                     <TextBox x:Name="nombreUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="72,95,0,0" TextWrapping="Wrap" Text="Andres" VerticalAlignment="Top" Width="120"/>
                 </Grid>
             </TabItem>
