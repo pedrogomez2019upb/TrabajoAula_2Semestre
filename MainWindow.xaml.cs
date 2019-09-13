@@ -23,6 +23,7 @@ namespace TrabajoAula
         public MainWindow()
         {
             InitializeComponent();
+            fecha.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
 
         private void ListBoxItem_Selected(object sender, RoutedEventArgs e)

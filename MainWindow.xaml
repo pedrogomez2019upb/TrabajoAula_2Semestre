@@ -39,7 +39,7 @@
                     <Button x:Name="eliminarProducto" Grid.ColumnSpan="2" Content="Eliminar Producto" HorizontalAlignment="Left" Height="31" Margin="125,10,0,0" VerticalAlignment="Top" Width="100"/>
                     <Button x:Name="modificarProducto" Content="Modificar Producto" HorizontalAlignment="Left" Margin="104,10,0,0" VerticalAlignment="Top" Width="125" Grid.Column="1" Height="31"/>
                     <Button x:Name="resumenInventario" Content="Resumen Inventario" Grid.Column="1" HorizontalAlignment="Left" Margin="247,10,0,0" VerticalAlignment="Top" Width="125" Height="31"/>
-                    <Image x:Name="logo" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="443.5,247,0,0" VerticalAlignment="Top" Width="100" Source="26195301_325619834599532_1553341167795247867_n.jpg"/>
+                    <Image x:Name="logoFast" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="443.5,247,0,0" VerticalAlignment="Top" Width="100" Source="iFastCO logo.gif"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="estadisticas" Header="Estadisticas" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="80">
@@ -58,15 +58,22 @@
                     </Grid.ColumnDefinitions>
                     <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
                     <Image x:Name="fotoUsuario" HorizontalAlignment="Left" Height="100" Margin="32,35,0,0" VerticalAlignment="Top" Width="100" Source="user_logo.png"/>
-                    <Image HorizontalAlignment="Left" Height="100" Margin="32,234,0,0" VerticalAlignment="Top" Width="100" Source="26195301_325619834599532_1553341167795247867_n.jpg"/>
+                    <Image x:Name="logoFastCO" HorizontalAlignment="Left" Height="100" Margin="32,234,0,0" VerticalAlignment="Top" Width="100" Source="iFastCO logo.gif"/>
                     <Label x:Name="labelUsuario" Content="Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="232,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,86,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <Label x:Name="labelNombre" Content="Nombre:" Grid.Column="1" HorizontalAlignment="Left" Margin="47,86,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="nombreUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,86,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="labelNombre" Content="Nombre:" Grid.Column="1" HorizontalAlignment="Left" Margin="46,82,0,0" VerticalAlignment="Top" Height="23"/>
+                    <Label x:Name="labelApellido" Content="Apellido:" Grid.Column="1" HorizontalAlignment="Left" Margin="46,120,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="apellidoUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,120,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="labelSexo" Content="Sexo:" Grid.Column="1" HorizontalAlignment="Left" Margin="55,151,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="sexoUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,154,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="labelFechaNacimiento" Content="Fecha de Nacimiento:" Grid.Column="1" HorizontalAlignment="Left" Margin="264,83,0,0" VerticalAlignment="Top"/>
 
                 </Grid>
             </TabItem>
         </TabControl>
         <TextBox x:Name="login" HorizontalAlignment="Left" Height="23" Margin="659,10,0,0" TextWrapping="Wrap" Text="Login: Administrador" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
+        <Label x:Name="fecha" Content="Label" HorizontalAlignment="Left" Margin="528,6,0,0" VerticalAlignment="Top"/>
+        
 
     </Grid>
 </Window>
