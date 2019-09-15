@@ -61,7 +61,7 @@
                         <ColumnDefinition Width="382*"/>
                     </Grid.ColumnDefinitions>
                     <ScrollBar Grid.Column="1" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="ventas1" HorizontalAlignment="Left" Height="24" Margin="10,14,0,0" TextWrapping="Wrap" Text=" Ventas Mes Actual&#xD;&#xA; Enero&#xD;&#xA;Febrero&#xD;&#xA;Abril&#xD;&#xA;Mayo&#xD;&#xA;Junio&#xD;&#xA;Julio&#xD;&#xA;Agosto&#xD;&#xA;Septiembre&#xD;&#xA;Octubre&#xD;&#xA;Noviembre&#xD;&#xA;Diciembre" VerticalAlignment="Top" Width="130" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" Grid.ColumnSpan="2" TextChanged="Ventas1_TextChanged"/>
+                    <TextBox x:Name="ventas1" HorizontalAlignment="Left" Height="33" Margin="10,9,0,0" TextWrapping="Wrap" Text=" Ventas Mes Actual&#xD;&#xA; Enero&#xD;&#xA;Febrero&#xD;&#xA;Abril&#xD;&#xA;Mayo&#xD;&#xA;Junio&#xD;&#xA;Julio&#xD;&#xA;Agosto&#xD;&#xA;Septiembre&#xD;&#xA;Octubre&#xD;&#xA;Noviembre&#xD;&#xA;Diciembre" VerticalAlignment="Top" Width="130" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" Grid.ColumnSpan="2" TextChanged="Ventas1_TextChanged"/>
                     <TabControl Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="310" Margin="10,47,0,0" VerticalAlignment="Top" Width="735">
                         <TabItem x:Name="item1" Header="Ventas">
                             <Grid Background="#FFE5E5E5">
