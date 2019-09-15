@@ -40,5 +40,10 @@ namespace TrabajoAula
         {
 
         }
+
+        private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
+        }
     }
 }
