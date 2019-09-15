@@ -110,5 +110,8 @@
   <ItemGroup>
     <Resource Include="iFastCO logo.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="diagrama-de-sectores.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

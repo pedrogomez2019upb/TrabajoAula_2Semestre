@@ -80,6 +80,8 @@
                                 <TextBox HorizontalAlignment="Left" Height="23" Margin="139.857,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="############" Grid.Column="1"/>
                                 <TextBox HorizontalAlignment="Left" Height="23" Margin="0,216,0,0" TextWrapping="Wrap" Text="Facturaciones" VerticalAlignment="Top" Width="178" Grid.ColumnSpan="2"/>
                                 <TextBox HorizontalAlignment="Left" Height="23" Margin="139.857,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="############" Grid.Column="1"/>
+                                <Image Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="425,76,0,0" VerticalAlignment="Top" Width="100"/>
+                                <Image Margin="365,48,116,71" Source="diagrama-de-sectores.png" Stretch="Fill" Grid.Column="1"/>
                             </Grid>
                         </TabItem>
                         <TabItem Header="Empresa" Margin="-2,-2,0,0" HorizontalAlignment="Left" Width="67">
