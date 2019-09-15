@@ -151,7 +151,6 @@
             </TabItem>
         </TabControl>
         <TextBox x:Name="login" HorizontalAlignment="Left" Height="23" Margin="659,10,0,0" TextWrapping="Wrap" Text="Login: Administrador" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
-        <Label x:Name="fecha" Content="Label" HorizontalAlignment="Left" Margin="528,6,0,0" VerticalAlignment="Top"/>
 
 
     </Grid>
