@@ -35,5 +35,10 @@ namespace TrabajoAula
         {
             
         }
+
+        private void Ventas1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
