@@ -23,7 +23,7 @@ namespace TrabajoAula
         public MainWindow()
         {
             InitializeComponent();
-            fecha.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            //fecha.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
 
         private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
@@ -44,6 +44,11 @@ namespace TrabajoAula
         private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
 
+        }
+
+        private void Cerrar_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
         }
     }
 }
