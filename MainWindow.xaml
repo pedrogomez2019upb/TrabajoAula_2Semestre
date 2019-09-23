@@ -126,11 +126,11 @@
                             </Grid>
                         </TabItem>
                     </TabControl>
-                    <ScrollBar Grid.Column="1" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" ValueChanged="ScrollBar_ValueChanged"/>
+                    <ScrollBar Grid.Column="1" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="usuarios1" Header="Usuarios" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="60">
-                <Grid x:Name="usuarios" Background="#FFE5E5E5">
+                <Grid x:Name="usuarios" Background="#FFE5E5E5" Margin="0,0,0,-3">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="168*"/>
                         <ColumnDefinition Width="551*"/>
@@ -169,7 +169,7 @@
             <Button Content="Button" Height="100" Width="75"/>
         </TabControl>
         <TextBox x:Name="login" HorizontalAlignment="Left" Height="23" Margin="675,0,0,0" TextWrapping="Wrap" Text="Login: Administrador" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
-        <Button x:Name="cerrar" Content="Cerrar" HorizontalAlignment="Left" Margin="517,8,0,0" VerticalAlignment="Top" Width="75" Click="Cerrar_Click"/>
+        <Button x:Name="cerrar" Content="Cerrar" HorizontalAlignment="Left" Margin="499,8,0,0" VerticalAlignment="Top" Width="75" Click="Cerrar_Click"/>
 
 
     </Grid>
