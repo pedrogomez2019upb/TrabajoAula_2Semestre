@@ -85,5 +85,26 @@ namespace TrabajoAula
             this.Hide();
 
         }
+
+        private void EditarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            editarUsuario eD = new editarUsuario();
+            eD.Show();
+            this.Hide();
+        }
+
+        private void ListaUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            ventanaListaUsuarios vLU = new ventanaListaUsuarios();
+            vLU.Show();
+            this.Hide();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ventanaEliminarUsuario vEU = new ventanaEliminarUsuario();
+            vEU.Show();
+            this.Hide();
+        }
     }
 }

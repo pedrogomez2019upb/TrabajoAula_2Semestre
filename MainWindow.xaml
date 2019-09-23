@@ -160,9 +160,9 @@
                     <Label x:Name="labelNacionalidad" Content="Nacionalidad:" Grid.Column="1" HorizontalAlignment="Left" Margin="299,224,0,0" VerticalAlignment="Top"/>
                     <TextBox x:Name="nacionalidadUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,228,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                     <GroupBox Grid.Column="1" Header="Datos" HorizontalAlignment="Left" Height="213" Margin="40,61,0,0" VerticalAlignment="Top" Width="513"/>
-                    <Button x:Name="editarUsuario" Content="Editar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="107,305,0,0" VerticalAlignment="Top" Width="88" Height="29"/>
-                    <Button x:Name="listaUsuario" Content="Lista Usarios" Grid.Column="1" HorizontalAlignment="Left" Margin="263,305,0,0" VerticalAlignment="Top" Width="88" Height="29"/>
-                    <Button Content="Eliminar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="410,305,0,0" VerticalAlignment="Top" Width="96" Height="29"/>
+                    <Button x:Name="editarUsuario" Content="Editar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="107,305,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="EditarUsuario_Click"/>
+                    <Button x:Name="listaUsuario" Content="Lista Usarios" Grid.Column="1" HorizontalAlignment="Left" Margin="263,305,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="ListaUsuario_Click"/>
+                    <Button Content="Eliminar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="410,305,0,0" VerticalAlignment="Top" Width="96" Height="29" Click="Button_Click"/>
 
                 </Grid>
             </TabItem>
