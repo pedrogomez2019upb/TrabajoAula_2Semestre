@@ -68,5 +68,12 @@ namespace TrabajoAula
             eliminarP.Show();
             this.Hide();
         }
+
+        private void ModificarProducto_Click(object sender, RoutedEventArgs e)
+        {
+            ModificarProducto modificarP = new ModificarProducto();
+            modificarP.Show();
+            this.Hide();
+        }
     }
 }
