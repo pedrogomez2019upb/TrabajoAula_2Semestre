@@ -32,10 +32,11 @@
             <TabItem x:Name="productos" Header="Productos">
                 <Grid Background="#FFE5E5E5" HorizontalAlignment="Left" Width="731">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="140*"/>
-                        <ColumnDefinition Width="579*"/>
+                        <ColumnDefinition Width="142*"/>
+                        <ColumnDefinition Width="34*"/>
+                        <ColumnDefinition Width="555*"/>
                     </Grid.ColumnDefinitions>
-                    <ListBox Height="262" Margin="18,93,205,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+                    <ListBox Height="262" Margin="18,93,205,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3">
                         <ListBox.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -46,10 +47,10 @@
                         </ListBox.RenderTransform>
                     </ListBox>
                     <Button x:Name="crearProducto" Content="Crear Producto" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" Width="89" Height="31" Click="CrearProducto_Click"/>
-                    <Button x:Name="eliminarProducto" Grid.ColumnSpan="2" Content="Eliminar Producto" HorizontalAlignment="Left" Height="31" Margin="125,10,0,0" VerticalAlignment="Top" Width="100" Click="EliminarProducto_Click"/>
-                    <Button x:Name="modificarProducto" Content="Modificar Producto" HorizontalAlignment="Left" Margin="104,10,0,0" VerticalAlignment="Top" Width="125" Grid.Column="1" Height="31" Click="ModificarProducto_Click"/>
-                    <Button x:Name="resumenInventario" Content="Resumen Inventario" Grid.Column="1" HorizontalAlignment="Left" Margin="247,10,0,0" VerticalAlignment="Top" Width="125" Height="31" Click="ResumenInventario_Click"/>
-                    <Image x:Name="logoFast" Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="443.5,247,0,0" VerticalAlignment="Top" Width="100" Source="iFastCO logo.gif"/>
+                    <Button x:Name="eliminarProducto" Grid.ColumnSpan="3" Content="Eliminar Producto" HorizontalAlignment="Left" Height="31" Margin="125,10,0,0" VerticalAlignment="Top" Width="100" Click="EliminarProducto_Click"/>
+                    <Button x:Name="modificarProducto" Content="Modificar Producto" HorizontalAlignment="Left" Margin="70.143,10,0,0" VerticalAlignment="Top" Width="125" Grid.Column="2" Height="31" Click="ModificarProducto_Click"/>
+                    <Button x:Name="resumenInventario" Content="Resumen Inventario" Grid.Column="2" HorizontalAlignment="Left" Margin="213.143,10,0,0" VerticalAlignment="Top" Width="125" Height="31" Click="ResumenInventario_Click"/>
+                    <Image x:Name="logoFast" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="410.143,247,0,0" VerticalAlignment="Top" Width="100" Source="iFastCO logo.gif"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="estadisticas" Header="Estadisticas" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="80">

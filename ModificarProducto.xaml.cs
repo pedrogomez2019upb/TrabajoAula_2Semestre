@@ -23,5 +23,12 @@ namespace TrabajoAula
         {
             InitializeComponent();
         }
+
+        private void ButtonVolverModProd_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow volverModProd = new MainWindow();
+            volverModProd.Show();
+            this.Hide();
+        }
     }
 }
