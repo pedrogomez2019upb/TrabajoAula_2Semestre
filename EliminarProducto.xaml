@@ -15,7 +15,7 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="182,148,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.106,0.593"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="164,179,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="169,210,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Guardar Cambios" HorizontalAlignment="Left" Margin="139,292,0,0" VerticalAlignment="Top" Width="109"/>
+        <Button Content="Guardar Cambios" HorizontalAlignment="Left" Margin="141,298,0,0" VerticalAlignment="Top" Width="109"/>
 
     </Grid>
 </Window>
