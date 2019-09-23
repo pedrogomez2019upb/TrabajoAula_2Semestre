@@ -24,6 +24,6 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="503,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="503,191,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <Label Content="Modificar Producto" HorizontalAlignment="Left" Margin="283,46,0,0" VerticalAlignment="Top" Background="#FF8A9DDE" FontSize="18" FontWeight="Bold"/>
-        <Button Content="Guardar Cambios" HorizontalAlignment="Left" Margin="310,325,0,0" VerticalAlignment="Top" Width="123"/>
+        <Button Content="Guardar Cambios" HorizontalAlignment="Left" Margin="307,325,0,0" VerticalAlignment="Top" Width="123"/>
     </Grid>
 </Window>
