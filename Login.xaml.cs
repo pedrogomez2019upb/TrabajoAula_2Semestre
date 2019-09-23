@@ -28,9 +28,14 @@ namespace TrabajoAula
 
         private void BotonVentanaLogin_Click(object sender, RoutedEventArgs e)
         {
-            if ()
+            if (textboxUsuario.Equals(usuario)&&textboxPassword(contrasena))
             {
+                MessageBox.Show("Bievenido {0} !", textboxUsuario);
 
+            }
+            else
+            {
+                MessageBox.Show("Por favor revisar el usuario/password");
             }
         }
     }
