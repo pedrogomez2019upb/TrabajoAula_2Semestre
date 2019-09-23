@@ -23,5 +23,12 @@ namespace TrabajoAula
         {
             InitializeComponent();
         }
+
+        private void BotonVolverCreacion_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mw = new MainWindow();
+            mw.Show();
+            this.Hide();
+        }
     }
 }
