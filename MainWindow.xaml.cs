@@ -77,5 +77,13 @@ namespace TrabajoAula
             modificarP.Show();
             this.Hide();
         }
+
+        private void ResumenInventario_Click(object sender, RoutedEventArgs e)
+        {
+            ResumenInventario resumenInventario = new ResumenInventario();
+            resumenInventario.Show();
+            this.Hide();
+
+        }
     }
 }
