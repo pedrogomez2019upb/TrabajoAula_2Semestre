@@ -59,10 +59,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="editarUsuario.xaml.cs">
+      <DependentUpon>editarUsuario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ResumenInventario.xaml.cs">
       <DependentUpon>ResumenInventario.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ventanaEliminarUsuario.xaml.cs">
+      <DependentUpon>ventanaEliminarUsuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ventanaListaUsuarios.xaml.cs">
+      <DependentUpon>ventanaListaUsuarios.xaml</DependentUpon>
+    </Compile>
     <Page Include="creacionProducto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="editarUsuario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -100,6 +113,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ResumenInventario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ventanaEliminarUsuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ventanaListaUsuarios.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
