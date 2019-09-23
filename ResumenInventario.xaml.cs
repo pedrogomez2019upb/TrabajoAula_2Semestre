@@ -28,5 +28,12 @@ namespace TrabajoAula
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow buttonAceptarResuInve = new MainWindow();
+            buttonAceptarResuInve.Show();
+            this.Hide();
+        }
     }
 }
