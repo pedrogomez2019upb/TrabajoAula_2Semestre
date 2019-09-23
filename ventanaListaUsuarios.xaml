@@ -8,7 +8,7 @@
         Title="ventanaListaUsuarios" Height="450" Width="351.316">
     <Grid Margin="0,0,5,0.5">
         <Label x:Name="labelListaUsuarios" Content="Lista Usuarios" HorizontalAlignment="Left" Margin="111,23,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
-        <Button x:Name="botonSeleccionarUsuario" Content="Button" HorizontalAlignment="Left" Margin="61,380,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="botonSeleccionarUsuario" Content="Seleccionar" HorizontalAlignment="Left" Margin="61,380,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
