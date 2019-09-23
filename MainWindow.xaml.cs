@@ -61,8 +61,13 @@ namespace TrabajoAula
 
         private void BotonLogin_Click(object sender, RoutedEventArgs e)
         {
-            Login login = new Login();
-            login.Show();
+
+        }
+
+        private void EliminarProducto_Click(object sender, RoutedEventArgs e)
+        {
+            EliminarProducto eliminarP = new EliminarProducto();
+            eliminarP.Show();
             this.Hide();
         }
     }
