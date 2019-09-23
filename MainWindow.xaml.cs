@@ -33,7 +33,9 @@ namespace TrabajoAula
 
         private void CrearProducto_Click(object sender, RoutedEventArgs e)
         {
-            
+            creacionProducto cp = new creacionProducto();
+            cp.Show();
+            this.Hide();
         }
 
         private void Ventas1_TextChanged(object sender, TextChangedEventArgs e)
