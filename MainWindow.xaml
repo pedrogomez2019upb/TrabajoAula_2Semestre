@@ -170,7 +170,7 @@
         </TabControl>
         <TextBox x:Name="labelLogin" HorizontalAlignment="Left" Height="23" Margin="324,5,0,0" TextWrapping="Wrap" Text="Login:" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
         <Button x:Name="cerrar" Content="Cerrar" HorizontalAlignment="Left" Margin="499,8,0,0" VerticalAlignment="Top" Width="75" Click="Cerrar_Click"/>
-        <Button x:Name="botonLogin" Content="Login" HorizontalAlignment="Left" Margin="686,5,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="botonLogin" Content="Login" HorizontalAlignment="Left" Margin="686,5,0,0" VerticalAlignment="Top" Width="75" Click="BotonLogin_Click"/>
 
 
     </Grid>

@@ -56,5 +56,12 @@ namespace TrabajoAula
         {
 
         }
+
+        private void BotonLogin_Click(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }
