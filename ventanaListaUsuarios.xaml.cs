@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace TrabajoAula
 {
     /// <summary>
-    /// Interaction logic for creacionProducto.xaml
+    /// Interaction logic for ventanaListaUsuarios.xaml
     /// </summary>
-    public partial class creacionProducto : Window
+    public partial class ventanaListaUsuarios : Window
     {
-        public creacionProducto()
+        public ventanaListaUsuarios()
         {
             InitializeComponent();
-        }
-
-        private void BotonVolverCreacion_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow mw = new MainWindow();
-            mw.Show();
-            this.Hide();
         }
     }
 }
