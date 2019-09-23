@@ -31,7 +31,6 @@ namespace TrabajoAula
             if (textboxUsuario.Equals(usuario)&&textboxPassword.Equals(contrasena))
             {
                 MessageBox.Show("Bievenido! Sigue hacia el programa principal.");
-
             }
             else
             {
