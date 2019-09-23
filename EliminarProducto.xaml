@@ -15,7 +15,8 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="182,148,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.106,0.593"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="164,179,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="169,210,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Guardar Cambios" HorizontalAlignment="Left" Margin="141,298,0,0" VerticalAlignment="Top" Width="109"/>
+        <Button Content="Guardar Cambios" HorizontalAlignment="Left" Margin="68,300,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button x:Name="botonVolver" Content="Volver" HorizontalAlignment="Left" Margin="235,300,0,0" VerticalAlignment="Top" Width="75" Click="BotonVolver_Click"/>
 
     </Grid>
 </Window>
