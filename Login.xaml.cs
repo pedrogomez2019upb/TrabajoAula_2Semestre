@@ -28,9 +28,9 @@ namespace TrabajoAula
 
         private void BotonVentanaLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (textboxUsuario.Equals(usuario)&&textboxPassword(contrasena))
+            if (textboxUsuario.Equals(usuario)&&textboxPassword.Equals(contrasena))
             {
-                MessageBox.Show("Bievenido {0} !", textboxUsuario);
+                MessageBox.Show("Bievenido! Sigue hacia el programa principal.");
 
             }
             else
