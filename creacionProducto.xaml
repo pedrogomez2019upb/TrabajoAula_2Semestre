@@ -11,7 +11,7 @@
             <ColumnDefinition Width="719*"/>
             <ColumnDefinition Width="44*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Creación Producto" Margin="310,43,0,0" VerticalAlignment="Top" Width="202" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Height="34"/>
+        <Label Content="Creación Producto" Margin="310,43,0,0" VerticalAlignment="Top" Width="202" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Height="34" Background="#FFA6E688"/>
         <Label Content="Nombre :" HorizontalAlignment="Left" Margin="156,125,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
         <Label Content="ISBN :" HorizontalAlignment="Left" Margin="156,156,0,0" VerticalAlignment="Top" Height="26" Width="41"/>
         <Label Content="Marca :" HorizontalAlignment="Left" Margin="156,229,0,0" VerticalAlignment="Top" Height="26" Width="49"/>
