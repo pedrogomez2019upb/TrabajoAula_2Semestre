@@ -19,8 +19,8 @@ namespace TrabajoAula
     /// </summary>
     public partial class Login : Window
     {
-        static string usuario = "andres4236956";
-        static string contrasena = "andresJaramillo1992";
+        static string usuario = "andres";
+        static string contrasena = "andres1992";
         public Login()
         {
             InitializeComponent();
@@ -28,9 +28,12 @@ namespace TrabajoAula
 
         private void BotonVentanaLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (textboxUsuario.Equals(usuario)&&textboxPassword.Equals(contrasena))
+            if (textboxUsuario.Text.Equals(usuario) && textboxPassword.Text.Equals(contrasena))
             {
                 MessageBox.Show("Bievenido! Sigue hacia el programa principal.");
+                MainWindow ventanaPrincipal = new MainWindow();
+                ventanaPrincipal.Show();
+                this.Hide();//this.Close();
             }
             else
             {
