@@ -29,7 +29,7 @@
                     <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Height="357" Margin="450,10,0,0" VerticalAlignment="Top" Width="117"/>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="productos" Header="Productos">
+            <TabItem x:Name="productos" Header="Productos" Height="22" VerticalAlignment="Top">
                 <Grid Background="#FFE5E5E5" HorizontalAlignment="Left" Width="731">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="142*"/>
