@@ -91,6 +91,7 @@ namespace TrabajoAula
                 MessageBox.Show("Digite un valor de precio valido");
                 return;
             }
+            MessageBox.Show("Se agrego el producto.");
 
 
 
