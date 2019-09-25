@@ -34,6 +34,19 @@ namespace TrabajoAula
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (textboxNombreCreaProd.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("El nombre del producto no debe estar vacío");
+                return;
+
+            }
+
+            Regex r = new Regex("^[0-5\\s]*$");
+            if (!r.IsMatch(textBoxIsbnCreaProd.Text))
+            {
+                MessageBox.Show("El campo ISBN no debe quedar vacío");
+                textBoxIsbnCreaProd.Focus();
+            }
         }
     }
 }
