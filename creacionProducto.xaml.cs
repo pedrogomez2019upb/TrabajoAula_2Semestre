@@ -30,5 +30,10 @@ namespace TrabajoAula
             mw.Show();
             this.Hide();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            //Commit para hacer cambio
+        }
     }
 }

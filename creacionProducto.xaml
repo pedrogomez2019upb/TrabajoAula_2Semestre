@@ -28,7 +28,7 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="474,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="503,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="503,191,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="252,337,0,0" VerticalAlignment="Top" Width="75" Height="20"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="252,337,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Button_Click"/>
         <Label Content="N° Referencia :" HorizontalAlignment="Left" Margin="460,270,0,0" VerticalAlignment="Top" Height="26" Width="88"/>
         <Label Content="#######" HorizontalAlignment="Left" Margin="556,270,0,0" VerticalAlignment="Top" Width="106"/>
         <Button x:Name="botonVolverCreacion" Content="Volver" HorizontalAlignment="Left" Margin="437,337,0,0" VerticalAlignment="Top" Width="75" Click="BotonVolverCreacion_Click"/>
