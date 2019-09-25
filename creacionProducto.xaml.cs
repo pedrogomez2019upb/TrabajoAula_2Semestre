@@ -42,10 +42,10 @@ namespace TrabajoAula
 
             }
             double num = 0;
-            bool isNum = double.TryParse(textboxNombreCreaProd.Text, out num);
+            bool isNum = double.TryParse(textBoxIsbnCreaProd.Text, out num);
             if (!isNum)
             {
-                MessageBox.Show("El campo ISBN no debe contener caracteres alfabeticos");
+                MessageBox.Show("Ingrese un ISBN válido");
                 return;
             }
 
@@ -59,6 +59,37 @@ namespace TrabajoAula
                 MessageBox.Show("El nombre de la marca no debe estar vacío");
                 return;
 
+            }
+            Regex num1 = new Regex("^[0-5\\s]*$");
+            if (!num1.IsMatch(textBoxMarcaCreaProd.Text))
+            {
+                MessageBox.Show("El nombre de la marca solo debe contener caracteres alfabeticos");
+                textBoxMarcaCreaProd.Focus();
+            }
+            if (textBoxProveeCreaProd.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("El nombre del proveedor no debe estar vacío");
+                return;
+
+            }
+            Regex num2 = new Regex("^[0-5\\s]*$");
+            if (!num2.IsMatch(textBoxProveeCreaProd.Text))
+            {
+                MessageBox.Show("El nombre del proveedor solo debe contener caracteres alfabeticos");
+                textBoxProveeCreaProd.Focus();
+            }
+            if (textBoxPrecioCreaProd.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("El nombre del precio no debe estar vacío");
+                return;
+
+            }
+
+            bool isNum3 = double.TryParse(textBoxPrecioCreaProd.Text, out num);
+            if (!isNum3)
+            {
+                MessageBox.Show("Digite un valor de precio valido");
+                return;
             }
 
 
