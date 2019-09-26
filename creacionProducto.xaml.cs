@@ -60,10 +60,10 @@ namespace TrabajoAula
                 return;
 
             }
-            Regex num1 = new Regex("^[0-5\\s]*$");
-            if (!num1.IsMatch(textBoxMarcaCreaProd.Text))
+            Regex r = new Regex("^[0-5\\s]*$");
+            if (!r.IsMatch(textBoxMarcaCreaProd.Text))
             {
-                MessageBox.Show("El nombre de la marca solo debe contener caracteres alfabeticos");
+                MessageBox.Show("El nombre de la marca sólo debe tener caracteres alfabéticos ");
                 textBoxMarcaCreaProd.Focus();
             }
             if (textBoxProveeCreaProd.Text.Trim().Length == 0)
@@ -91,6 +91,7 @@ namespace TrabajoAula
                 MessageBox.Show("Digite un valor de precio valido");
                 return;
             }
+           
 
 
 
