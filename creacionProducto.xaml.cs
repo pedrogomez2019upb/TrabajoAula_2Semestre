@@ -60,10 +60,10 @@ namespace TrabajoAula
                 return;
 
             }
-            Regex r = new Regex("^[0-5\\s]*$");
-            if (!r.IsMatch(textBoxMarcaCreaProd.Text))
+            Regex num1 = new Regex("^[a-zA-Z\\s]*$");
+            if (!num1.IsMatch(textBoxMarcaCreaProd.Text))
             {
-                MessageBox.Show("El nombre de la marca sólo debe tener caracteres alfabéticos ");
+                MessageBox.Show("El nombre de la marca solo debe contener caracteres alfabeticos");
                 textBoxMarcaCreaProd.Focus();
             }
             if (textBoxProveeCreaProd.Text.Trim().Length == 0)
@@ -72,7 +72,7 @@ namespace TrabajoAula
                 return;
 
             }
-            Regex num2 = new Regex("^[0-5\\s]*$");
+            Regex num2 = new Regex("^[a-zA-Z\\s]*$");
             if (!num2.IsMatch(textBoxProveeCreaProd.Text))
             {
                 MessageBox.Show("El nombre del proveedor solo debe contener caracteres alfabeticos");
@@ -91,7 +91,8 @@ namespace TrabajoAula
                 MessageBox.Show("Digite un valor de precio valido");
                 return;
             }
-           
+            else { MessageBox.Show("Se agrego el producto."); }
+            
 
 
 

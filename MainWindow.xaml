@@ -140,27 +140,27 @@
                     <Image x:Name="fotoUsuario" HorizontalAlignment="Left" Height="100" Margin="32,35,0,0" VerticalAlignment="Top" Width="100" Source="user_logo.png"/>
                     <Image x:Name="logoFastCO" HorizontalAlignment="Left" Height="100" Margin="32,234,0,0" VerticalAlignment="Top" Width="100" Source="iFastCO logo.gif"/>
                     <Label x:Name="labelUsuario" Content="Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="232,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
-                    <TextBox x:Name="nombreUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,86,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="nombreUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <Label x:Name="labelNombre" Content="Nombre:" Grid.Column="1" HorizontalAlignment="Left" Margin="46,82,0,0" VerticalAlignment="Top" Height="23"/>
                     <Label x:Name="labelApellido" Content="Apellido:" Grid.Column="1" HorizontalAlignment="Left" Margin="46,116,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="apellidoUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,119,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="apellidoUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <Label x:Name="labelSexo" Content="Sexo:" Grid.Column="1" HorizontalAlignment="Left" Margin="55,151,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="sexoUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,154,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="sexoUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <Label x:Name="labelFechaNacimiento" Content="Fecha de Nacimiento:" Grid.Column="1" HorizontalAlignment="Left" Margin="281,83,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="fechaUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,86,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="fechaUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <Label x:Name="labelLugarNacimiento" Content="Lugar de Nacimiento:" Grid.Column="1" HorizontalAlignment="Left" Margin="282,119,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="lugarnacimientoUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,121,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="lugarnacimientoUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <Label x:Name="labelDireccion" Content="Direccion:" Grid.Column="1" HorizontalAlignment="Left" Margin="40,185,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.989,0.401"/>
-                    <TextBox x:Name="direccionUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,188,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="direccionUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <Label x:Name="labelEdad" Content="Edad:" Grid.Column="1" HorizontalAlignment="Left" Margin="324,154,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="edadUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,155,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="edadUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <Label x:Name="labelCiudad" Content="Ciudad:" Grid.Column="1" HorizontalAlignment="Left" Margin="46,224,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="ciudadUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,227,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="ciudadUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="107,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <Label x:Name="labelDepartamento" Content="Departamento:" Grid.Column="1" HorizontalAlignment="Left" Margin="299,188,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="departamentoUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,189,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="departamentoUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <Label x:Name="labelNacionalidad" Content="Nacionalidad:" Grid.Column="1" HorizontalAlignment="Left" Margin="299,224,0,0" VerticalAlignment="Top"/>
-                    <TextBox x:Name="nacionalidadUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,228,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <GroupBox Grid.Column="1" Header="Datos" HorizontalAlignment="Left" Height="213" Margin="40,61,0,0" VerticalAlignment="Top" Width="513"/>
+                    <TextBox x:Name="nacionalidadUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <GroupBox Header="Datos" HorizontalAlignment="Left" Height="213" Margin="32,61,0,0" VerticalAlignment="Top" Width="513" Grid.Column="1"/>
                     <Button x:Name="editarUsuario" Content="Editar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="107,305,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="EditarUsuario_Click"/>
                     <Button x:Name="listaUsuario" Content="Lista Usarios" Grid.Column="1" HorizontalAlignment="Left" Margin="263,305,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="ListaUsuario_Click"/>
                     <Button Content="Eliminar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="410,305,0,0" VerticalAlignment="Top" Width="96" Height="29" Click="Button_Click"/>

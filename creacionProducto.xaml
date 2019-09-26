@@ -11,25 +11,25 @@
             <ColumnDefinition Width="719*"/>
             <ColumnDefinition Width="44*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="Creación Producto" Margin="310,43,0,0" VerticalAlignment="Top" Width="202" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Height="34" Background="#FFA6E688"/>
-        <Label x:Name="labelNombreProducto" Content="Nombre :" HorizontalAlignment="Left" Margin="156,125,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Label x:Name="labelCreacionProducto" Content="Creación Producto" Margin="310,43,0,0" VerticalAlignment="Top" Width="202" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Height="34" Background="#FFA6E688"/>
+        <Label x:Name="labelNombreProducto" Content="Nombre :" HorizontalAlignment="Left" Margin="146,125,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
         <Label Content="ISBN :" HorizontalAlignment="Left" Margin="156,156,0,0" VerticalAlignment="Top" Height="26" Width="41"/>
-        <Label Content="Marca :" HorizontalAlignment="Left" Margin="156,229,0,0" VerticalAlignment="Top" Height="26" Width="49"/>
-        <Label Content="Proveedor :" HorizontalAlignment="Left" Margin="156,270,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
+        <Label Content="Marca :" HorizontalAlignment="Left" Margin="148,232,0,0" VerticalAlignment="Top" Height="26" Width="49"/>
+        <Label Content="Proveedor :" HorizontalAlignment="Left" Margin="136,270,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
         <Label Content="Precio :" HorizontalAlignment="Left" Margin="409,125,0,0" VerticalAlignment="Top" Height="26" Width="49"/>
         <Label Content="Fecha Ingreso :" HorizontalAlignment="Left" Margin="409,156,0,0" VerticalAlignment="Top" Height="26" Width="89"/>
         <Label Content="Tipo :" HorizontalAlignment="Left" Margin="156,196,0,0" VerticalAlignment="Top" Height="26" Width="39"/>
-        <TextBox x:Name="textboxNombreCreaProd" HorizontalAlignment="Left" Height="23" Margin="221,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxIsbnCreaProd" HorizontalAlignment="Left" Height="23" Margin="202,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxTipoCreaProd" HorizontalAlignment="Left" Height="23" Margin="202,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxMarcaCreaProd" HorizontalAlignment="Left" Height="23" Margin="207,232,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxProveeCreaProd" HorizontalAlignment="Left" Height="23" Margin="231,274,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBoxPrecioCreaProd" HorizontalAlignment="Left" Height="23" Margin="474,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxNombreCreaProd" HorizontalAlignment="Left" Height="23" Margin="221,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxIsbnCreaProd" HorizontalAlignment="Left" Height="23" Margin="221,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxTipoCreaProd" HorizontalAlignment="Left" Height="23" Margin="221,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxMarcaCreaProd" HorizontalAlignment="Left" Height="23" Margin="221,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxProveeCreaProd" HorizontalAlignment="Left" Height="23" Margin="221,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxPrecioCreaProd" HorizontalAlignment="Left" Height="23" Margin="474,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="buttonGuardarCreaProd" Content="Guardar" HorizontalAlignment="Left" Margin="252,337,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Button_Click"/>
-        <Label Content="N° Referencia :" HorizontalAlignment="Left" Margin="460,270,0,0" VerticalAlignment="Top" Height="26" Width="88"/>
-        <Label Content="#######" HorizontalAlignment="Left" Margin="556,270,0,0" VerticalAlignment="Top" Width="106"/>
+        <Label Content="N° Referencia :" HorizontalAlignment="Left" Margin="424,237,0,0" VerticalAlignment="Top" Height="26" Width="88"/>
+        <Label Content="#######" HorizontalAlignment="Left" Margin="527,237,0,0" VerticalAlignment="Top" Width="106"/>
         <Button x:Name="botonVolverCreacion" Content="Volver" HorizontalAlignment="Left" Margin="437,337,0,0" VerticalAlignment="Top" Width="75" Click="BotonVolverCreacion_Click"/>
-        <DatePicker HorizontalAlignment="Left" Margin="513,160,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" Margin="503,156,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
