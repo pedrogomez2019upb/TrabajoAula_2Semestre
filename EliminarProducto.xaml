@@ -14,9 +14,9 @@
         <Label Content="" HorizontalAlignment="Left" Margin="66,237,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBoxNombreEliminarProducto" HorizontalAlignment="Left" Height="23" Margin="182,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.106,0.593" TextChanged="TextBoxNombreEliminarProducto_TextChanged"/>
         <TextBox x:Name="textBoxNrefeElimProducto" HorizontalAlignment="Left" Height="23" Margin="164,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBoxNrefeElimProducto_TextChanged"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="169,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Guardar Cambios" HorizontalAlignment="Left" Margin="68,300,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click"/>
         <Button x:Name="botonVolver" Content="Volver" HorizontalAlignment="Left" Margin="235,300,0,0" VerticalAlignment="Top" Width="75" Click="BotonVolver_Click"/>
+        <DatePicker HorizontalAlignment="Left" Margin="169,208,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

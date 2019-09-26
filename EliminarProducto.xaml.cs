@@ -43,6 +43,26 @@ namespace TrabajoAula
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (textBoxNombreEliminarProducto.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("El nombre del producto a eliminar no debe estar vacío");
+                return;
+            }
+            double num1;
+            bool isNum4 = double.TryParse(textBoxNrefeElimProducto.Text, out num1);
+            if (!isNum4)
+            {
+                MessageBox.Show("Ingrese un número ne referencia válido");
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Los cambios se guardaron con exito");
+                MainWindow ventanaPriciElimiProducto = new MainWindow();
+                ventanaPriciElimiProducto.Show();
+                this.Hide();
+            }
+
 
         }
     }
