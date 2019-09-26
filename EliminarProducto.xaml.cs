@@ -30,5 +30,20 @@ namespace TrabajoAula
             mw.Show();
             this.Hide();
         }
+
+        private void TextBoxNombreEliminarProducto_TextChanged(object sender, TextChangedEventArgs e)
+        {
+           
+        }
+
+        private void TextBoxNrefeElimProducto_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

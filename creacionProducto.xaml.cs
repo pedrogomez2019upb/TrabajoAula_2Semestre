@@ -91,7 +91,12 @@ namespace TrabajoAula
                 MessageBox.Show("Digite un valor de precio valido");
                 return;
             }
-            else { MessageBox.Show("Se agrego el producto."); }
+            else {
+                MessageBox.Show("El producto se agregó con exito.");
+                MainWindow ventanaPrinCreaProducto = new MainWindow();
+                ventanaPrinCreaProducto.Show();
+                this.Hide();
+            }
             
 
 
