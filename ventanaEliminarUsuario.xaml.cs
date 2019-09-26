@@ -23,5 +23,17 @@ namespace TrabajoAula
         {
             InitializeComponent();
         }
+
+        private void BotonRealizarEliminarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BotonVolverEliminarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow ventanaPrincipalEliminarUsuario = new MainWindow();
+            ventanaPrincipalEliminarUsuario.Show();
+            this.Hide();
+        }
     }
 }
