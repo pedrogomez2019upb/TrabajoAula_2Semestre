@@ -12,19 +12,19 @@
         <Label Content="Marca :" HorizontalAlignment="Left" Margin="156,229,0,0" VerticalAlignment="Top" Height="26" Width="49"/>
         <Label Content="Proveedor :" HorizontalAlignment="Left" Margin="156,270,0,0" VerticalAlignment="Top" Height="26" Width="70"/>
         <Label Content="Tipo :" HorizontalAlignment="Left" Margin="156,196,0,0" VerticalAlignment="Top" Height="26" Width="39"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="221,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="202,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="202,199,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="207,232,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="231,274,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxNombreModProd" HorizontalAlignment="Left" Height="23" Margin="221,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxIsbnModProd" HorizontalAlignment="Left" Height="23" Margin="202,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxTipoModProd" HorizontalAlignment="Left" Height="23" Margin="202,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxMarcaModProd" HorizontalAlignment="Left" Height="23" Margin="207,232,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxProveedorModProd" HorizontalAlignment="Left" Height="23" Margin="231,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Precio :" HorizontalAlignment="Left" Margin="409,125,0,0" VerticalAlignment="Top" Height="26" Width="49"/>
         <Label Content="Fecha Ingreso :" HorizontalAlignment="Left" Margin="409,156,0,0" VerticalAlignment="Top" Height="26" Width="89"/>
-        <Label Content="Fecha Salida :" HorizontalAlignment="Left" Margin="409,187,0,0" VerticalAlignment="Top" Height="26" Width="81"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="474,125,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="503,160,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="503,191,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxPrecioModProd" HorizontalAlignment="Left" Height="23" Margin="474,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Modificar Producto" HorizontalAlignment="Left" Margin="283,46,0,0" VerticalAlignment="Top" Background="#FF8A9DDE" FontSize="18" FontWeight="Bold"/>
-        <Button Content="Guardar Cambios" HorizontalAlignment="Left" Margin="231,325,0,0" VerticalAlignment="Top" Width="123"/>
+        <Button x:Name="buttonModificarProducto" Content="Guardar Cambios" HorizontalAlignment="Left" Margin="231,325,0,0" VerticalAlignment="Top" Width="123" Click="Button_Click"/>
         <Button x:Name="buttonVolverModProd" Content="Volver" HorizontalAlignment="Left" Margin="442,325,0,0" VerticalAlignment="Top" Width="75" Click="ButtonVolverModProd_Click"/>
+        <Label Content="N° Referencia :" HorizontalAlignment="Left" Margin="458,232,0,0" VerticalAlignment="Top"/>
+        <Label Content="########" HorizontalAlignment="Left" Margin="551,232,0,0" VerticalAlignment="Top"/>
+        <DatePicker HorizontalAlignment="Left" VerticalAlignment="Top" Margin="503,160,0,0"/>
     </Grid>
 </Window>
