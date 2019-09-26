@@ -51,5 +51,10 @@ namespace TrabajoAula
                 MessageBox.Show("Por favor revisar el usuario/password");
             }
         }
+
+        private void ButtonCerrarLogin_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
     }
 }
