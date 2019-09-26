@@ -23,5 +23,17 @@ namespace TrabajoAula
         {
             InitializeComponent();
         }
+
+        private void BotonSeleccionarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BotonVolverLista_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow ventanaPrincipalVolverLista = new MainWindow();
+            ventanaPrincipalVolverLista.Show();
+            this.Hide();
+        }
     }
 }
