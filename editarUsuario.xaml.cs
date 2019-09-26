@@ -23,5 +23,12 @@ namespace TrabajoAula
         {
             InitializeComponent();
         }
+
+        private void BotonVolverEditarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow ventanaPrinciapl = new MainWindow();
+            ventanaPrinciapl.Show();
+            this.Hide();
+        }
     }
 }
