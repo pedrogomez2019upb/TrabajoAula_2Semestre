@@ -59,6 +59,7 @@ namespace TrabajoAula
                 MessageBox.Show("El nombre de la marca no debe estar vacío");
                 return;
 
+
             }
             Regex num1 = new Regex("^[a-zA-Z\\s]*$");
             if (!num1.IsMatch(textBoxMarcaCreaProd.Text))
