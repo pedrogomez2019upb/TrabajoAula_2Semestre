@@ -29,6 +29,7 @@ namespace TrabajoAula
             MainWindow ventanaPrincipalAgregarUsuario = new MainWindow();
             ventanaPrincipalAgregarUsuario.Show();
             this.Hide();
+            //Cometario de progreso
         }
     }
 }
