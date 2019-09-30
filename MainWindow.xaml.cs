@@ -107,5 +107,12 @@ namespace TrabajoAula
             vEU.Show();
             this.Hide();
         }
+
+        private void BotonAgegarUsuario_Click(object sender, RoutedEventArgs e)
+        {
+            ventanaAgregarUsuario vAG = new ventanaAgregarUsuario();
+            vAG.Show();
+            this.Hide();
+        }
     }
 }

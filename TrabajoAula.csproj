@@ -65,6 +65,9 @@
     <Compile Include="ResumenInventario.xaml.cs">
       <DependentUpon>ResumenInventario.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ventanaAgregarUsuario.xaml.cs">
+      <DependentUpon>ventanaAgregarUsuario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ventanaEliminarUsuario.xaml.cs">
       <DependentUpon>ventanaEliminarUsuario.xaml</DependentUpon>
     </Compile>
@@ -113,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ResumenInventario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ventanaAgregarUsuario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
