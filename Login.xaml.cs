@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace TrabajoAula
 {
     /// <summary>
@@ -28,6 +29,8 @@ namespace TrabajoAula
 
         private void BotonVentanaLogin_Click(object sender, RoutedEventArgs e)
         {
+
+            
             //Validacion Usuario y Password
             if (textboxUsuario.Text.Trim().Length == 0)
             {
@@ -52,9 +55,15 @@ namespace TrabajoAula
             }
         }
 
+
         private void ButtonCerrarLogin_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
+        }
+
+        private void BotonVentanaLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            
         }
     }
 }

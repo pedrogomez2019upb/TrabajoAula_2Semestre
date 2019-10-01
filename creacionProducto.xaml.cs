@@ -20,6 +20,8 @@ namespace TrabajoAula
     /// </summary>
     public partial class creacionProducto : Window
     {
+        
+
         public creacionProducto()
         {
             InitializeComponent();
@@ -98,6 +100,8 @@ namespace TrabajoAula
                 ventanaPrinCreaProducto.Show();
                 this.Hide();
             }
+            Producto producto1 = new Producto(textboxNombreCreaProd.Text,Convert.ToDouble(textBoxIsbnCreaProd.Text),textBoxTipoCreaProd.Text,textBoxMarcaCreaProd.Text,textBoxProveeCreaProd.Text,Convert.ToDouble(textBoxPrecioCreaProd));
+
             
 
 
