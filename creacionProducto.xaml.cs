@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -100,9 +101,30 @@ namespace TrabajoAula
                 ventanaPrinCreaProducto.Show();
                 this.Hide();
             }
-            Producto producto1 = new Producto(textboxNombreCreaProd.Text,Convert.ToDouble(textBoxIsbnCreaProd.Text),textBoxTipoCreaProd.Text,textBoxMarcaCreaProd.Text,textBoxProveeCreaProd.Text,Convert.ToDouble(textBoxPrecioCreaProd));
+            Producto producto1 = new Producto(textboxNombreCreaProd.Text.ToString(),textBoxIsbnCreaProd.Text.ToString(),textBoxTipoCreaProd.Text.ToString(),textBoxMarcaCreaProd.Text.ToString(),textBoxProveeCreaProd.Text.ToString(),textBoxPrecioCreaProd.Text.ToString());
 
-            
+            try
+            {
+                StreamWriter sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Productos.txt", append: true);
+                sw.WriteLine(producto1.ToString());
+                sw.Close();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hubo un error con el archivo y no se pudo registrar");
+            }
+            finally
+            {
+                
+                textboxNombreCreaProd.Text = "";
+                textBoxIsbnCreaProd.Text = "";
+                textBoxTipoCreaProd.Text = "";
+                textBoxMarcaCreaProd.Text = "";
+                textBoxProveeCreaProd.Text = "";
+                textBoxPrecioCreaProd.Text = "";
+
+
+            }
 
 
 

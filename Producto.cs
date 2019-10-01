@@ -9,21 +9,21 @@ namespace TrabajoAula
     class Producto
     {
         private String nombre;
-        private double isbn;
+        private String isbn;
         private String tipo;
         private String marca;
         private String proveedor;
-        private double precio;
+        private String precio;
 
         public string Nombre { get => nombre; set => nombre = value; }
-        public double Isbn { get => isbn; set => isbn = value; }
+        public String Isbn { get => isbn; set => isbn = value; }
         public string Tipo { get => tipo; set => tipo = value; }
         public string Marca { get => marca; set => marca = value; }
         public string Proveedor { get => proveedor; set => proveedor = value; }
-        public double Precio { get => precio; set => precio = value; }
+        public String Precio { get => precio; set => precio = value; }
 
         public Producto() { }
-        public Producto(String nombre,double isbn,String tipo,String marca,String proveedor,double precio)
+        public Producto(String nombre,String isbn,String tipo,String marca,String proveedor,String precio)
         {
             this.nombre = nombre;
             this.isbn = isbn;
