@@ -29,7 +29,7 @@
         <Label Content="N° Referencia :" HorizontalAlignment="Left" Margin="424,237,0,0" VerticalAlignment="Top" Height="26" Width="88"/>
         <Label Content="#######" HorizontalAlignment="Left" Margin="527,237,0,0" VerticalAlignment="Top" Width="106"/>
         <Button x:Name="botonVolverCreacion" Content="Volver" HorizontalAlignment="Left" Margin="437,337,0,0" VerticalAlignment="Top" Width="75" Click="BotonVolverCreacion_Click"/>
-        <DatePicker HorizontalAlignment="Left" Margin="503,156,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="fechaIngresoDatePicker" HorizontalAlignment="Left" Margin="503,156,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

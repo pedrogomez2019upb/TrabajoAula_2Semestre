@@ -101,11 +101,11 @@ namespace TrabajoAula
                 ventanaPrinCreaProducto.Show();
                 this.Hide();
             }
-            Producto producto1 = new Producto(textboxNombreCreaProd.Text.ToString(),textBoxIsbnCreaProd.Text.ToString(),textBoxTipoCreaProd.Text.ToString(),textBoxMarcaCreaProd.Text.ToString(),textBoxProveeCreaProd.Text.ToString(),textBoxPrecioCreaProd.Text.ToString());
+            Producto producto1 = new Producto(textboxNombreCreaProd.Text.ToString(),textBoxIsbnCreaProd.Text.ToString(),textBoxTipoCreaProd.Text.ToString(),textBoxMarcaCreaProd.Text.ToString(),textBoxProveeCreaProd.Text.ToString(),textBoxPrecioCreaProd.Text.ToString(),fechaIngresoDatePicker.Text.ToString());
 
             try
             {
-                StreamWriter sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Productos.txt", append: true);
+                StreamWriter sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Productos1.txt", append: true);
                 sw.WriteLine(producto1.ToString());
                 sw.Close();
             }
@@ -122,6 +122,7 @@ namespace TrabajoAula
                 textBoxMarcaCreaProd.Text = "";
                 textBoxProveeCreaProd.Text = "";
                 textBoxPrecioCreaProd.Text = "";
+                fechaIngresoDatePicker.Text = "";
 
 
             }

@@ -14,6 +14,7 @@ namespace TrabajoAula
         private String marca;
         private String proveedor;
         private String precio;
+        private String fechaIngreso;
 
         public string Nombre { get => nombre; set => nombre = value; }
         public String Isbn { get => isbn; set => isbn = value; }
@@ -21,9 +22,10 @@ namespace TrabajoAula
         public string Marca { get => marca; set => marca = value; }
         public string Proveedor { get => proveedor; set => proveedor = value; }
         public String Precio { get => precio; set => precio = value; }
+        public string FechaIngreso { get => fechaIngreso; set => fechaIngreso = value; }
 
         public Producto() { }
-        public Producto(String nombre,String isbn,String tipo,String marca,String proveedor,String precio)
+        public Producto(String nombre,String isbn,String tipo,String marca,String proveedor,String precio,String fechaIngreso)
         {
             this.nombre = nombre;
             this.isbn = isbn;
@@ -31,11 +33,12 @@ namespace TrabajoAula
             this.Marca = marca;
             this.Proveedor = proveedor;
             this.Precio = precio;
+            this.fechaIngreso = fechaIngreso;
         }
 
         public override string ToString()
         {
-            return string.Format("{0},{1},{2},{3},{4},{5}", Nombre, Isbn, Tipo, Marca, Proveedor, Precio);
+            return string.Format("{0},{1},{2},{3},{4},{5},{6}", Nombre, Isbn, Tipo, Marca, Proveedor, Precio,fechaIngreso);
 
         }
     }
