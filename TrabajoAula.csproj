@@ -66,6 +66,7 @@
     <Compile Include="ResumenInventario.xaml.cs">
       <DependentUpon>ResumenInventario.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Usuario.cs" />
     <Compile Include="ventanaAgregarUsuario.xaml.cs">
       <DependentUpon>ventanaAgregarUsuario.xaml</DependentUpon>
     </Compile>
