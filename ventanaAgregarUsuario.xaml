@@ -9,6 +9,7 @@
     <Grid>
         <Button x:Name="botonAgregarUsuarioInstancia" Content="Guardar Usuario" HorizontalAlignment="Left" Margin="114,362,0,0" VerticalAlignment="Top" Width="118" Height="50"/>
         <Button x:Name="botonVolverAgregarUsuario" Content="Volver" HorizontalAlignment="Left" Margin="557,362,0,0" VerticalAlignment="Top" Width="109" Height="50" Click="BotonVolverAgregarUsuario_Click"/>
+        <Label x:Name="labelAgregarUsuario" Content="Agregar Usuario" HorizontalAlignment="Left" Margin="305,26,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="22"/>
 
     </Grid>
 </Window>
