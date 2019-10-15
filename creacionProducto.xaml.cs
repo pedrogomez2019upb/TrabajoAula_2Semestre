@@ -125,6 +125,7 @@ namespace TrabajoAula
                 fechaIngresoDatePicker.Text = "";
 
 
+
             }
 
 
