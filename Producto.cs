@@ -38,7 +38,7 @@ namespace TrabajoAula
 
         public override string ToString()
         {
-            return string.Format("{0},{1},{2},{3},{4},{5},{6}", Nombre, Isbn, Tipo, Marca, Proveedor, Precio,fechaIngreso);
+            return string.Format("{0},{1},{2},{3},{4},{5},{6}", Nombre, Isbn, Tipo, Marca, Proveedor, Precio, fechaIngreso);
 
         }
     }

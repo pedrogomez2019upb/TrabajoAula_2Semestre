@@ -21,7 +21,7 @@
                     <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="508,-54,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
                     <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="104,10,0,0" TextWrapping="Wrap" Text="Descripción" VerticalAlignment="Top" Width="101"/>
                     <TextBox HorizontalAlignment="Left" Height="23" Margin="67,10,0,0" TextWrapping="Wrap" Text="Nombre del producto" VerticalAlignment="Top" Width="124" Grid.ColumnSpan="2"/>
-                    <ListBox HorizontalAlignment="Left" Height="327" Margin="0,38,0,0" VerticalAlignment="Top" Width="745" Grid.ColumnSpan="2"/>
+                    <ListBox x:Name="listBoxVentas" HorizontalAlignment="Left" Height="327" Margin="0,38,0,0" VerticalAlignment="Top" Width="745" Grid.ColumnSpan="2"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="productos" Header="Productos" Height="22" VerticalAlignment="Top">
