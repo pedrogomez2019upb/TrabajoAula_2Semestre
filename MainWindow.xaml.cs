@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace TrabajoAula
 {
@@ -20,12 +21,46 @@ namespace TrabajoAula
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<Producto> productos1;
         public MainWindow()
         {
             InitializeComponent();
             //fecha.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            llenaLista();
         }
+        public void llenaLista()
+        {
+            string line;
+            StreamReader lector = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\Productos1.txt", Encoding.UTF8);
+            productos1 = new List<Producto>();
 
+            while ((line = lector.ReadLine()) != null)
+            {
+                Producto prodTemp = new Producto(line);
+           
+                //MessageBox.Show(line.ToString());
+                //string[] datos = line.Split(',');
+
+                //prodTemp = new Producto(line);
+                productos1.Add(prodTemp);
+
+            }
+            lector.Close();
+            dataGridVentas.ItemsSource = productos1;
+            llenarListBox();
+        }
+        private void llenarListBox()
+        {
+            listBoxVentas.Items.Clear();
+            if (productos1.Count > 0)
+            {
+                foreach (Producto prod in productos1)
+                {
+                    listBoxVentas.Items.Add(prod);
+                }
+
+            }
+        }
         private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
         {
 

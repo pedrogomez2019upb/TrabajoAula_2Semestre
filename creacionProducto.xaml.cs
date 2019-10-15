@@ -21,8 +21,8 @@ namespace TrabajoAula
     /// </summary>
     public partial class creacionProducto : Window
     {
-        
 
+        List<Producto> listaListBox = new List<Producto>();
         public creacionProducto()
         {
             InitializeComponent();
@@ -33,6 +33,8 @@ namespace TrabajoAula
             MainWindow mw = new MainWindow();
             mw.Show();
             this.Hide();
+            
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -123,6 +125,8 @@ namespace TrabajoAula
                 textBoxProveeCreaProd.Text = "";
                 textBoxPrecioCreaProd.Text = "";
                 fechaIngresoDatePicker.Text = "";
+
+                
 
 
             }

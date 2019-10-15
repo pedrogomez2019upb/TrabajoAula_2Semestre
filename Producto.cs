@@ -21,10 +21,21 @@ namespace TrabajoAula
         public string Tipo { get => tipo; set => tipo = value; }
         public string Marca { get => marca; set => marca = value; }
         public string Proveedor { get => proveedor; set => proveedor = value; }
-        public String Precio { get => precio; set => precio = value; }
         public string FechaIngreso { get => fechaIngreso; set => fechaIngreso = value; }
+        public string Precio { get => precio; set => precio = value; }
 
-        public Producto() { }
+        public Producto(string line)
+        {
+           
+            string[] datos = line.Split(',');
+            Nombre = datos[0];
+            Isbn = datos[1];
+            Tipo = datos[2];
+            Marca = datos[3];
+            Proveedor = datos[4];
+            Precio = datos[5];
+            
+        }
         public Producto(String nombre,String isbn,String tipo,String marca,String proveedor,String precio,String fechaIngreso)
         {
             this.nombre = nombre;
@@ -32,7 +43,7 @@ namespace TrabajoAula
             this.tipo = tipo;
             this.Marca = marca;
             this.Proveedor = proveedor;
-            this.Precio = precio;
+            this.precio = precio;
             this.fechaIngreso = fechaIngreso;
         }
 
