@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 
+
 namespace TrabajoAula
 {
     /// <summary>
@@ -20,7 +21,7 @@ namespace TrabajoAula
     /// </summary>
     public partial class Login : Window
     {
-
+ 
         static string usuario = "andres";
         static string contrasena = "andres1992";
        
@@ -75,6 +76,11 @@ namespace TrabajoAula
         }
 
         private void textboxPassword_DragEnter(object sender, DragEventArgs e)
+        {
+
+        }
+
+        private void textboxPassword_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
