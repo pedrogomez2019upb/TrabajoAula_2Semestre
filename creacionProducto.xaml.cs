@@ -22,7 +22,7 @@ namespace TrabajoAula
     public partial class creacionProducto : Window
     {
 
-        List<Producto> listaListBox = new List<Producto>();
+        List<Producto> listaProductos = new List<Producto>();
         public creacionProducto()
         {
             InitializeComponent();
@@ -104,7 +104,7 @@ namespace TrabajoAula
                 this.Hide();
             }
             Producto producto1 = new Producto(textboxNombreCreaProd.Text.ToString(),textBoxIsbnCreaProd.Text.ToString(),textBoxTipoCreaProd.Text.ToString(),textBoxMarcaCreaProd.Text.ToString(),textBoxProveeCreaProd.Text.ToString(),textBoxPrecioCreaProd.Text.ToString(),fechaIngresoDatePicker.Text.ToString());
-
+            listaProductos.Add(producto1);
             try
             {
                 StreamWriter sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Productos1.txt", append: true);
