@@ -20,8 +20,10 @@ namespace TrabajoAula
     /// </summary>
     public partial class Login : Window
     {
+
         static string usuario = "andres";
         static string contrasena = "andres1992";
+       
         public Login()
         {
             InitializeComponent();
@@ -49,6 +51,7 @@ namespace TrabajoAula
                 ventanaPrincipal.Show();
                 this.Hide();//this.Close();
             }
+            
             else
             {
                 MessageBox.Show("Por favor revisar el usuario/password");
@@ -64,6 +67,16 @@ namespace TrabajoAula
         private void BotonVentanaLogin_KeyDown(object sender, KeyEventArgs e)
         {
             
+        }
+
+        private void botonVentanaLogin_DragEnter(object sender, DragEventArgs e)
+        {
+
+        }
+
+        private void textboxPassword_DragEnter(object sender, DragEventArgs e)
+        {
+
         }
     }
 }

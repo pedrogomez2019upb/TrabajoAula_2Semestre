@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TrabajoAula"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="288.158">
+        Title="Login" Height="450" Width="288.158" HorizontalAlignment="Center" VerticalAlignment="Center">
     <Grid Margin="0,0,5,0.5">
         <Label x:Name="labelBienvenido" Content="Bienvenido" HorizontalAlignment="Left" Margin="88,0,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
-        <Label x:Name="labelUsuario" Content="Usuario" HorizontalAlignment="Left" Margin="116,55,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <TextBox x:Name="textboxUsuario" HorizontalAlignment="Left" Height="24" Margin="88,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="labelContrasena" Content="Password" HorizontalAlignment="Left" Margin="102,148,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <TextBox x:Name="textboxPassword" HorizontalAlignment="Left" Height="23" Margin="88,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="botonVentanaLogin" Content="Login" HorizontalAlignment="Left" Margin="112,252,0,0" VerticalAlignment="Top" Width="74" Click="BotonVentanaLogin_Click" KeyDown="BotonVentanaLogin_KeyDown"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="102,322,0,0" VerticalAlignment="Top" Width="100" Source="iFastCO logo.gif"/>
-        <Button x:Name="buttonCerrarLogin" Content="Cerrar" HorizontalAlignment="Left" Margin="112,297,0,0" VerticalAlignment="Top" Width="75" Click="ButtonCerrarLogin_Click"/>
+        <Label x:Name="labelUsuario" Content="Usuario" HorizontalAlignment="Left" Margin="108,148,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="textboxUsuario" HorizontalAlignment="Left" Height="24" Margin="84,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="labelContrasena" Content="Password" HorizontalAlignment="Left" Margin="98,208,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBox x:Name="textboxPassword" HorizontalAlignment="Left" Height="23" Margin="84,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" DragEnter="textboxPassword_DragEnter"/>
+        <Button x:Name="botonVentanaLogin" Content="Login" HorizontalAlignment="Left" Margin="104,315,0,0" VerticalAlignment="Top" Width="74" Click="BotonVentanaLogin_Click" KeyDown="BotonVentanaLogin_KeyDown" DragEnter="botonVentanaLogin_DragEnter"/>
+        <Image HorizontalAlignment="Left" Height="184" Margin="51,0,0,0" VerticalAlignment="Top" Width="184" Source="iFastCO logo.gif"/>
+        <Button x:Name="buttonCerrarLogin" Content="Cerrar" HorizontalAlignment="Left" Margin="104,350,0,0" VerticalAlignment="Top" Width="74" Click="ButtonCerrarLogin_Click"/>
 
     </Grid>
 </Window>
