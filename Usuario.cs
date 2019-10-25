@@ -30,5 +30,16 @@ namespace TrabajoAula
 
         public Usuario() { }
 
+        public Usuario(string nombre,string apellido,string sexo,string ciudad,string fechaNacimiento,int edad,string departamento,string nacionalidad)
+        {
+            Nombre = nombre;
+            Apellido = apellido;
+            Sexo = sexo;
+            Ciudad = ciudad;
+            FechaNacimiento = fechaNacimiento;
+            Edad = edad;
+            Departamento = departamento;
+            Nacionalidad = nacionalidad;
+        }
     }
 }
