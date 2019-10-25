@@ -46,6 +46,7 @@ namespace TrabajoAula
 
             }
             lector.Close();
+            dataGridVentas.ItemsSource = null;
             dataGridVentas.ItemsSource = productos1;
             llenarListBox();
         }
@@ -149,5 +150,7 @@ namespace TrabajoAula
             vAG.Show();
             this.Hide();
         }
+
+        
     }
 }

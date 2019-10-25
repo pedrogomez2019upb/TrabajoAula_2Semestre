@@ -21,7 +21,7 @@ namespace TrabajoAula
     /// </summary>
     public partial class creacionProducto : Window
     {
-        MainWindow programa1 = new MainWindow();
+        //MainWindow programa1 = new MainWindow();
         List<Producto> listaProductos = new List<Producto>();
         public creacionProducto()
         {
@@ -32,7 +32,7 @@ namespace TrabajoAula
         {
             MainWindow mw = new MainWindow();
             mw.Show();
-            this.Hide();
+            this.Close();
             
             
         }
@@ -98,6 +98,34 @@ namespace TrabajoAula
                 return;
             }
             else {
+                Producto producto1 = new Producto(textboxNombreCreaProd.Text.ToString(), textBoxIsbnCreaProd.Text.ToString(), textBoxTipoCreaProd.Text.ToString(), textBoxMarcaCreaProd.Text.ToString(), textBoxProveeCreaProd.Text.ToString(), textBoxPrecioCreaProd.Text.ToString(), fechaIngresoDatePicker.Text.ToString());
+                listaProductos.Add(producto1);
+                try
+                {
+                    StreamWriter sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Productos1.txt", append: true);
+                    sw.WriteLine(producto1.ToString());
+                    sw.Close();
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Hubo un error con el archivo y no se pudo registrar");
+                }
+                finally
+                {
+
+                    textboxNombreCreaProd.Text = "";
+                    textBoxIsbnCreaProd.Text = "";
+                    textBoxTipoCreaProd.Text = "";
+                    textBoxMarcaCreaProd.Text = "";
+                    textBoxProveeCreaProd.Text = "";
+                    textBoxPrecioCreaProd.Text = "";
+                    fechaIngresoDatePicker.Text = "";
+
+
+
+
+                }
                 MessageBox.Show("El producto se agregó con exito.");
                 MainWindow ventanaPrinCreaProducto = new MainWindow();
                 ventanaPrinCreaProducto.Show();
@@ -106,34 +134,7 @@ namespace TrabajoAula
                 
 
             }
-            Producto producto1 = new Producto(textboxNombreCreaProd.Text.ToString(),textBoxIsbnCreaProd.Text.ToString(),textBoxTipoCreaProd.Text.ToString(),textBoxMarcaCreaProd.Text.ToString(),textBoxProveeCreaProd.Text.ToString(),textBoxPrecioCreaProd.Text.ToString(),fechaIngresoDatePicker.Text.ToString());
-            listaProductos.Add(producto1);
-            try
-            {
-                StreamWriter sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Productos1.txt", append: true);
-                sw.WriteLine(producto1.ToString());
-                sw.Close();
-                
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Hubo un error con el archivo y no se pudo registrar");
-            }
-            finally
-            {
-                
-                textboxNombreCreaProd.Text = "";
-                textBoxIsbnCreaProd.Text = "";
-                textBoxTipoCreaProd.Text = "";
-                textBoxMarcaCreaProd.Text = "";
-                textBoxProveeCreaProd.Text = "";
-                textBoxPrecioCreaProd.Text = "";
-                fechaIngresoDatePicker.Text = "";
-
-
-
-
-            }
+            
 
 
 
