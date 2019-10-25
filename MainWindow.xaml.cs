@@ -47,21 +47,20 @@ namespace TrabajoAula
             }
             lector.Close();
             dataGridVentas.ItemsSource = productos1;
-            //llenarListBox();
+            llenarListBox();
         }
-        /*private void llenarListBox()
+        public void llenarListBox()
         {
-            listBoxVentas.Items.Clear();
+// listBoxVentas.Items.Clear();
             if (productos1.Count > 0)
             {
                 foreach (Producto prod in productos1)
                 {
-                    listBoxVentas.Items.Add(prod);
+                    //listBoxVentas.Items.Add(prod);
                 }
 
             }
         }
-        */
         private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
         {
 
@@ -71,7 +70,7 @@ namespace TrabajoAula
         {
             creacionProducto cp = new creacionProducto();
             cp.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void Ventas1_TextChanged(object sender, TextChangedEventArgs e)
@@ -149,11 +148,6 @@ namespace TrabajoAula
             ventanaAgregarUsuario vAG = new ventanaAgregarUsuario();
             vAG.Show();
             this.Hide();
-        }
-
-        private void listBoxVentas_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }

@@ -27,8 +27,9 @@ namespace TrabajoAula
         private void BotonVolver_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mw = new MainWindow();
+            mw.llenarListBox();
             mw.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void TextBoxNombreEliminarProducto_TextChanged(object sender, TextChangedEventArgs e)

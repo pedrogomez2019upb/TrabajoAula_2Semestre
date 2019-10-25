@@ -21,7 +21,7 @@ namespace TrabajoAula
     /// </summary>
     public partial class creacionProducto : Window
     {
-
+        MainWindow programa1 = new MainWindow();
         List<Producto> listaProductos = new List<Producto>();
         public creacionProducto()
         {
@@ -101,7 +101,10 @@ namespace TrabajoAula
                 MessageBox.Show("El producto se agregó con exito.");
                 MainWindow ventanaPrinCreaProducto = new MainWindow();
                 ventanaPrinCreaProducto.Show();
-                this.Hide();
+                
+                this.Close();
+                
+
             }
             Producto producto1 = new Producto(textboxNombreCreaProd.Text.ToString(),textBoxIsbnCreaProd.Text.ToString(),textBoxTipoCreaProd.Text.ToString(),textBoxMarcaCreaProd.Text.ToString(),textBoxProveeCreaProd.Text.ToString(),textBoxPrecioCreaProd.Text.ToString(),fechaIngresoDatePicker.Text.ToString());
             listaProductos.Add(producto1);
@@ -110,6 +113,7 @@ namespace TrabajoAula
                 StreamWriter sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Productos1.txt", append: true);
                 sw.WriteLine(producto1.ToString());
                 sw.Close();
+                
             }
             catch (Exception)
             {
@@ -126,7 +130,6 @@ namespace TrabajoAula
                 textBoxPrecioCreaProd.Text = "";
                 fechaIngresoDatePicker.Text = "";
 
-                
 
 
 
