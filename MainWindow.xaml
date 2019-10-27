@@ -8,125 +8,24 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="395" Margin="10,10,0,0" VerticalAlignment="Top" Width="751">
-            <TabItem x:Name="ventas" Header="Ventas">
-                <Grid Background="#FFE5E5E5">
+            <TabItem x:Name="productos" Header="Inventario" Margin="-2,-2,-2,2">
+                <Grid Background="#FFADB7D8" HorizontalAlignment="Left" Width="731">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="92*"/>
-                        <ColumnDefinition Width="653*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="0,10,0,0" TextWrapping="Wrap" Text="Cantidad" VerticalAlignment="Top" Width="62"/>
-                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="450,10,0,0" TextWrapping="Wrap" Text="Costo unitario" VerticalAlignment="Top" Width="117"/>
-                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="330,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Text="Proveedor"/>
-                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="210,10,0,0" TextWrapping="Wrap" Text="Fecha de ingreso" VerticalAlignment="Top" Width="115"/>
-                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="508,-54,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                    <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="104,10,0,0" TextWrapping="Wrap" Text="Descripción" VerticalAlignment="Top" Width="101"/>
-                    <TextBox HorizontalAlignment="Left" Height="23" Margin="67,10,0,0" TextWrapping="Wrap" Text="Nombre del producto" VerticalAlignment="Top" Width="124" Grid.ColumnSpan="2"/>
-                    <DataGrid x:Name="dataGridVentas" HorizontalAlignment="Left" Height="319" Margin="10,38,0,0" VerticalAlignment="Top" Width="725" Grid.ColumnSpan="2"/>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="productos" Header="Productos" Margin="-2,-2,-2,2">
-                <Grid Background="#FFE5E5E5" HorizontalAlignment="Left" Width="731">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="142*"/>
+                        <ColumnDefinition Width="129*"/>
+                        <ColumnDefinition Width="13*"/>
                         <ColumnDefinition Width="34*"/>
                         <ColumnDefinition Width="555*"/>
                     </Grid.ColumnDefinitions>
-                    <ListBox Height="262" Margin="18,93,205,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3">
-                        <ListBox.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform Angle="-0.075"/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </ListBox.RenderTransform>
-                    </ListBox>
-                    <Button x:Name="crearProducto" Content="Crear Producto" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" Width="89" Height="31" Click="CrearProducto_Click"/>
-                    <Button x:Name="eliminarProducto" Grid.ColumnSpan="3" Content="Eliminar Producto" HorizontalAlignment="Left" Height="31" Margin="125,10,0,0" VerticalAlignment="Top" Width="100" Click="EliminarProducto_Click"/>
-                    <Button x:Name="modificarProducto" Content="Modificar Producto" HorizontalAlignment="Left" Margin="70.143,10,0,0" VerticalAlignment="Top" Width="125" Grid.Column="2" Height="31" Click="ModificarProducto_Click"/>
-                    <Button x:Name="resumenInventario" Content="Resumen Inventario" Grid.Column="2" HorizontalAlignment="Left" Margin="213.143,10,0,0" VerticalAlignment="Top" Width="125" Height="31" Click="ResumenInventario_Click"/>
-                    <Image x:Name="logoFast" Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="410.143,247,0,0" VerticalAlignment="Top" Width="100" Source="iFastCO logo.gif"/>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="estadisticas" Header="Estadisticas" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="80">
-                <Grid Background="#FFE5E5E5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="101*"/>
-                        <ColumnDefinition Width="192*"/>
-                        <ColumnDefinition Width="70*"/>
-                        <ColumnDefinition Width="382*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBox x:Name="ventas1" HorizontalAlignment="Left" Height="33" Margin="10,9,0,0" TextWrapping="Wrap" Text=" Ventas Mes Actual&#xD;&#xA; Enero&#xD;&#xA;Febrero&#xD;&#xA;Abril&#xD;&#xA;Mayo&#xD;&#xA;Junio&#xD;&#xA;Julio&#xD;&#xA;Agosto&#xD;&#xA;Septiembre&#xD;&#xA;Octubre&#xD;&#xA;Noviembre&#xD;&#xA;Diciembre" VerticalAlignment="Top" Width="168" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" Grid.ColumnSpan="2" TextChanged="Ventas1_TextChanged"/>
-                    <TabControl Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="310" Margin="10,47,0,0" VerticalAlignment="Top" Width="735">
-                        <TabItem x:Name="item1" Header="Ventas">
-                            <Grid Background="#FFE5E5E5">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="77*"/>
-                                    <ColumnDefinition Width="652*"/>
-                                </Grid.ColumnDefinitions>
-                                <TextBox x:Name="nombre2" HorizontalAlignment="Left" Height="23" Margin="0,19,0,0" TextWrapping="Wrap" Text="Productos vendidos" VerticalAlignment="Top" Width="178" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,48,0,0" TextWrapping="Wrap" Text="Productos defectuosos" VerticalAlignment="Top" Width="178" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,76,0,0" TextWrapping="Wrap" Text="Domicilios realizados " VerticalAlignment="Top" Width="178" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,104,0,0" TextWrapping="Wrap" Text="Ingresos mensuales " VerticalAlignment="Top" Width="178" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" Text="Egresos mensuales" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,160,0,0" TextWrapping="Wrap" Text="Costo de envío de materiales" VerticalAlignment="Top" Width="178" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="139.857,19,0,0" TextWrapping="Wrap" Text="############" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="139.857,48,0,0" TextWrapping="Wrap" Text="############" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="139.857,76,0,0" TextWrapping="Wrap" Text="############" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="139.857,104,0,0" TextWrapping="Wrap" Text="$$$$$$$$$$$$$" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="139.857,132,0,0" TextWrapping="Wrap" Text="$$$$$$$$$$$$$" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="139.857,160,0,0" TextWrapping="Wrap" Text="$$$$$$$$$$$$$" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,188,0,0" TextWrapping="Wrap" Text="Número de clientes " VerticalAlignment="Top" Width="178" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="139.857,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="############" Grid.Column="1"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,216,0,0" TextWrapping="Wrap" Text="Facturaciones" VerticalAlignment="Top" Width="178" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="139.857,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="############" Grid.Column="1"/>
-                                <Image Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="425,76,0,0" VerticalAlignment="Top" Width="100"/>
-                                <Image Margin="365,48,116,71" Source="diagrama-de-sectores.png" Stretch="Fill" Grid.Column="1"/>
-                            </Grid>
-                        </TabItem>
-                        <TabItem Header="Empresa" Margin="-2,-2,0,0" HorizontalAlignment="Left" Width="67">
-                            <Grid Background="#FFE5E5E5">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="16*"/>
-                                    <ColumnDefinition Width="713*"/>
-                                </Grid.ColumnDefinitions>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,10,0,0" TextWrapping="Wrap" Text="Numero de empleados" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,38,0,0" TextWrapping="Wrap" Text="Salarios a empleados" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2" Text="Costos mantenimiento"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,94,0,0" TextWrapping="Wrap" Text="Retefuente" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,122,0,0" TextWrapping="Wrap" Text="DIAN" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,150,0,0" TextWrapping="Wrap" Text="Manejo de seguros contrariesgo" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,178,0,0" TextWrapping="Wrap" Text="Inmoviliario" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
-                                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="195,10,0,0" TextWrapping="Wrap" Text="########" VerticalAlignment="Top" Width="120"/>
-                                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="195,38,0,0" TextWrapping="Wrap" Text="$$$$$$$$$" VerticalAlignment="Top" Width="120"/>
-                                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="195,94,0,0" TextWrapping="Wrap" Text="$$$$$$$$$" VerticalAlignment="Top" Width="120"/>
-                                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="195,66,0,0" TextWrapping="Wrap" Text="$$$$$$$$$" VerticalAlignment="Top" Width="120"/>
-                                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="195,122,0,0" TextWrapping="Wrap" Text="$$$$$$$$$" VerticalAlignment="Top" Width="120"/>
-                                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="195,178,0,0" TextWrapping="Wrap" Text="$$$$$$$$$" VerticalAlignment="Top" Width="120"/>
-                                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="195,150,0,0" TextWrapping="Wrap" Text="$$$$$$$$$" VerticalAlignment="Top" Width="120"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,206,0,0" TextWrapping="Wrap" Text="Servicios" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
-                                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="195,206,0,0" TextWrapping="Wrap" Text="$$$$$$$$$" VerticalAlignment="Top" Width="120"/>
-                                <TextBox HorizontalAlignment="Left" Height="23" Margin="0,234,0,0" TextWrapping="Wrap" Text="Costos publicitarios" VerticalAlignment="Top" Width="184" Grid.ColumnSpan="2"/>
-                                <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="195,234,0,0" TextWrapping="Wrap" Text="$$$$$$$$$" VerticalAlignment="Top" Width="120"/>
-                                <Image Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="473,94,0,0" VerticalAlignment="Top" Width="100"/>
-                                <Image Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="486,105,0,0" VerticalAlignment="Top" Width="100"/>
-                                <Image Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="486,73,0,0" VerticalAlignment="Top" Width="100"/>
-                                <Image Margin="378,51,48,53" Source="Image3.png" Stretch="Fill" Grid.Column="1">
-                                    <Image.OpacityMask>
-                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                            <GradientStop Color="Black" Offset="0"/>
-                                            <GradientStop Color="#FFF0F0F0" Offset="1"/>
-                                        </LinearGradientBrush>
-                                    </Image.OpacityMask>
-                                </Image>
-                            </Grid>
-                        </TabItem>
-                    </TabControl>
-                    <ScrollBar Grid.Column="1" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="crearProducto" Content="Crear Producto" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" Width="89" Height="31" Click="CrearProducto_Click" Background="#FFF9F9F9"/>
+                    <Button x:Name="eliminarProducto" Grid.ColumnSpan="4" Content="Eliminar Producto" HorizontalAlignment="Left" Height="31" Margin="125,10,0,0" VerticalAlignment="Top" Width="100" Click="EliminarProducto_Click" Background="#FFF9F9F9"/>
+                    <Button x:Name="modificarProducto" Content="Modificar Producto" HorizontalAlignment="Left" Margin="70,10,0,0" VerticalAlignment="Top" Width="125" Grid.Column="3" Height="31" Click="ModificarProducto_Click" Background="#FFF9F9F9"/>
+                    <Button x:Name="resumenInventario" Content="Resumen Inventario" Grid.Column="3" HorizontalAlignment="Left" Margin="213,10,0,0" VerticalAlignment="Top" Width="125" Height="31" Click="ResumenInventario_Click" Background="#FFF9F9F9"/>
+                    <Image x:Name="logoFast" Grid.Column="3" HorizontalAlignment="Left" Height="88" Margin="448,269,0,0" VerticalAlignment="Top" Width="83" Source="iFastCO logo.gif"/>
+                    <DataGrid x:Name="dataGridVentas" HorizontalAlignment="Left" Height="311" Margin="19,46,0,0" VerticalAlignment="Top" Width="582" Grid.ColumnSpan="4"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="usuarios1" Header="Usuarios" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="60">
-                <Grid x:Name="usuarios" Background="#FFE5E5E5" Margin="0,0,0,-3">
+                <Grid x:Name="usuarios" Background="#FFADB7D8" Margin="0,0,0,-3">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="168*"/>
                         <ColumnDefinition Width="551*"/>
@@ -155,10 +54,10 @@
                     <Label x:Name="labelNacionalidad" Content="Nacionalidad:" Grid.Column="1" HorizontalAlignment="Left" Margin="299,224,0,0" VerticalAlignment="Top"/>
                     <TextBox x:Name="nacionalidadUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <GroupBox Header="Datos" HorizontalAlignment="Left" Height="213" Margin="29,62,0,0" VerticalAlignment="Top" Width="513" Grid.Column="1"/>
-                    <Button x:Name="editarUsuario" Content="Editar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="179,305,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="EditarUsuario_Click"/>
-                    <Button x:Name="listaUsuario" Content="Lista Usarios" Grid.Column="1" HorizontalAlignment="Left" Margin="293,305,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="ListaUsuario_Click"/>
-                    <Button Content="Eliminar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="410,305,0,0" VerticalAlignment="Top" Width="96" Height="29" Click="Button_Click"/>
-                    <Button x:Name="botonAgegarUsuario" Content="Agregar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="55,305,0,0" VerticalAlignment="Top" Width="93" Height="29" Click="BotonAgegarUsuario_Click"/>
+                    <Button x:Name="editarUsuario" Content="Editar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="179,305,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="EditarUsuario_Click" Background="#FFF9F9F9"/>
+                    <Button x:Name="listaUsuario" Content="Lista Usarios" Grid.Column="1" HorizontalAlignment="Left" Margin="293,305,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="ListaUsuario_Click" Background="#FFF9F9F9"/>
+                    <Button Content="Eliminar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="410,305,0,0" VerticalAlignment="Top" Width="96" Height="29" Click="Button_Click" Background="#FFF9F9F9"/>
+                    <Button x:Name="botonAgegarUsuario" Content="Agregar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="55,305,0,0" VerticalAlignment="Top" Width="93" Height="29" Click="BotonAgegarUsuario_Click" Background="#FFF9F9F9"/>
                     <DatePicker x:Name="dateFechaNacimiento" Grid.Column="1" HorizontalAlignment="Left" Margin="410,88,0,0" VerticalAlignment="Top" Width="120"/>
 
                 </Grid>

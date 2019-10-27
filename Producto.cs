@@ -34,7 +34,7 @@ namespace TrabajoAula
             Marca = datos[3];
             Proveedor = datos[4];
             Precio = datos[5];
-            
+            FechaIngreso = datos[6];
         }
         public Producto(String nombre,String isbn,String tipo,String marca,String proveedor,String precio,String fechaIngreso)
         {
