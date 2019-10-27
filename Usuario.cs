@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace TrabajoAula
 {
@@ -40,6 +41,23 @@ namespace TrabajoAula
             Edad = edad;
             Departamento = departamento;
             Nacionalidad = nacionalidad;
+        }
+        List<Usuario> listaUsuarios = new List<Usuario>();
+        public void cargarUsuarios()
+        {
+            string line;
+            StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\Usuarios.txt" + Encoding.UTF8); 
+            while ((line=sr.ReadLine())!=null)
+                {
+                string[] datos = line.Split(';');
+                Usuario usuarioTemporal = new Usuario(datos[0],datos[1],datos[2],datos[3],datos[4],Int32.Parse(datos[5]),datos[6],datos[7]);
+                listaUsuarios.Add(usuarioTemporal);
+
+                }
+        }
+        public List<Usuario> recibirUsuarios()
+        {
+            return listaUsuarios; 
         }
     }
 }
