@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TrabajoAula"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Programa Principal" Height="450" Width="800">
     <Grid>
-        <TabControl HorizontalAlignment="Left" Height="395" Margin="10,10,0,0" VerticalAlignment="Top" Width="751">
-            <TabItem x:Name="productos" Header="Inventario" Margin="-2,-2,-2,2">
+        <TabControl HorizontalAlignment="Left" Height="401" Margin="18,11,0,0" VerticalAlignment="Top" Width="751">
+            <TabItem x:Name="productos" Header="Inventario" Margin="0,0,-4,0">
                 <Grid Background="#FFADB7D8" HorizontalAlignment="Left" Width="731">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="129*"/>
@@ -24,7 +24,7 @@
                     <DataGrid x:Name="dataGridVentas" HorizontalAlignment="Left" Height="311" Margin="19,46,0,0" VerticalAlignment="Top" Width="582" Grid.ColumnSpan="4"/>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="usuarios1" Header="Usuarios" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="60">
+            <TabItem x:Name="usuarios1" Header="Usuarios" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="60" Margin="0">
                 <Grid x:Name="usuarios" Background="#FFADB7D8" Margin="0,0,0,-3">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="168*"/>
