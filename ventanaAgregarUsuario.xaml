@@ -5,11 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TrabajoAula"
         mc:Ignorable="d"
-        Title="ventanaAgregarUsuario" Height="450" Width="800">
+        Title="Agregar Usuario" Height="381" Width="550.5">
     <Grid>
-        <Button x:Name="botonAgregarUsuarioInstancia" Content="Guardar Usuario" HorizontalAlignment="Left" Margin="114,362,0,0" VerticalAlignment="Top" Width="118" Height="50"/>
-        <Button x:Name="botonVolverAgregarUsuario" Content="Volver" HorizontalAlignment="Left" Margin="557,362,0,0" VerticalAlignment="Top" Width="109" Height="50" Click="BotonVolverAgregarUsuario_Click"/>
-        <Label x:Name="labelAgregarUsuario" Content="Agregar Usuario" HorizontalAlignment="Left" Margin="305,26,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="22"/>
+        <Button x:Name="botonAgregarUsuarioInstancia" Content="Guardar Usuario" HorizontalAlignment="Left" Margin="94,286,0,0" VerticalAlignment="Top" Width="118" Height="50" Click="botonAgregarUsuarioInstancia_Click"/>
+        <Button x:Name="botonVolverAgregarUsuario" Content="Volver" HorizontalAlignment="Left" Margin="350,286,0,0" VerticalAlignment="Top" Width="110" Height="50" Click="BotonVolverAgregarUsuario_Click"/>
+        <Label x:Name="labelAgregarUsuario" Content="Agregar Usuario" HorizontalAlignment="Left" Margin="174,23,0,0" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" FontSize="22"/>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="46,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellido:" HorizontalAlignment="Left" Margin="46,134,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sexo:" HorizontalAlignment="Left" Margin="55,175,0,0" VerticalAlignment="Top"/>
+        <Label Content="Direccion:" HorizontalAlignment="Left" Margin="40,206,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ciudad:" HorizontalAlignment="Left" Margin="46,237,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fecha de Nacimiento:" HorizontalAlignment="Left" Margin="252,103,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lugar de Nacimiento:" HorizontalAlignment="Left" Margin="252,134,0,0" VerticalAlignment="Top"/>
+        <Label Content="Edad:" HorizontalAlignment="Left" Margin="296,175,0,0" VerticalAlignment="Top"/>
+        <Label Content="Departamento:" HorizontalAlignment="Left" Margin="272,206,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nacionalidad:" HorizontalAlignment="Left" Margin="272,237,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textboxNombreNew" HorizontalAlignment="Left" Height="23" Margin="108,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxApellidoNew" HorizontalAlignment="Left" Height="23" Margin="108,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxSexoNew" HorizontalAlignment="Left" Height="23" Margin="108,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxDireccionNew" HorizontalAlignment="Left" Height="24" Margin="108,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxCiudadNew" HorizontalAlignment="Left" Height="22" Margin="108,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="fechaNew" HorizontalAlignment="Left" Margin="381,107,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textboxLugarNacimientoNew" HorizontalAlignment="Left" Height="24" Margin="381,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxEdadNew" HorizontalAlignment="Left" Height="23" Margin="381,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxDepartamentoNew" HorizontalAlignment="Left" Height="22" Margin="381,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxNacionalidadNew" HorizontalAlignment="Left" Height="23" Margin="381,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
