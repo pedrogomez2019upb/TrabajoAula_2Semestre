@@ -50,8 +50,13 @@ namespace TrabajoAula
             while ((line=sr.ReadLine())!=null)
                 {
                 string[] datos = line.Split(';');
-                Usuario usuarioTemporal = new Usuario(datos[0],datos[1],datos[2],datos[3],datos[4],Int32.Parse(datos[5]),datos[6],datos[7]);
-                listaUsuarios.Add(usuarioTemporal);
+                if (datos[0].Equals(this.Nombre))
+                {
+                    Usuario usuarioTemporal = new Usuario(datos[0], datos[1], datos[2], datos[3], datos[4], Int32.Parse(datos[5]), datos[6], datos[7]);
+                    listaUsuarios.Add(usuarioTemporal);
+                }
+                
+                sr.Close();
 
                 }
         }

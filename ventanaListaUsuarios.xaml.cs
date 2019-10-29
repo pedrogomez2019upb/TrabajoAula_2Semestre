@@ -20,9 +20,23 @@ namespace TrabajoAula
     /// </summary>
     public partial class ventanaListaUsuarios : Window
     {
+        private void mostrarUsuarios()
+        {
+            Usuario usuario1 = new Usuario();
+            List<Usuario> usuarios = usuario1.recibirUsuarios();
+            comboUsuarios.Items.Clear();
+            for (int i = 0; i < usuarios.Count; i++)
+            {
+                comboUsuarios.Items.Add(usuarios[i].Nombre);
+            }
+            comboUsuarios.IsEnabled = true;
+            if (usuarios.Count > 0)
+                comboUsuarios.SelectedIndex = 0;
+        }
         public ventanaListaUsuarios()
         {
             InitializeComponent();
+            mostrarUsuarios();
         }
 
         private void BotonSeleccionarUsuario_Click(object sender, RoutedEventArgs e)

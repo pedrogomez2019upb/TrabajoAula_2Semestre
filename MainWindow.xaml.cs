@@ -21,6 +21,7 @@ namespace TrabajoAula
     /// </summary>
     public partial class MainWindow : Window
     {
+        Usuario usuario1 = new Usuario();
         private List<Producto> productos1;
         public MainWindow()
         {
@@ -144,6 +145,7 @@ namespace TrabajoAula
             this.Hide();
         }
 
+
         private void BotonAgegarUsuario_Click(object sender, RoutedEventArgs e)
         {
             ventanaAgregarUsuario vAG = new ventanaAgregarUsuario();
@@ -151,6 +153,9 @@ namespace TrabajoAula
             this.Hide();
         }
 
-        
+        private void dataGridVentas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
