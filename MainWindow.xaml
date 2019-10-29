@@ -17,9 +17,9 @@
                         <ColumnDefinition Width="555*"/>
                     </Grid.ColumnDefinitions>
                     <Button x:Name="crearProducto" Content="Crear Producto" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" Width="89" Height="31" Click="CrearProducto_Click" Background="#FFF9F9F9"/>
-                    <Button x:Name="eliminarProducto" Grid.ColumnSpan="4" Content="Eliminar Producto" HorizontalAlignment="Left" Height="31" Margin="125,10,0,0" VerticalAlignment="Top" Width="100" Click="EliminarProducto_Click" Background="#FFF9F9F9"/>
-                    <Button x:Name="modificarProducto" Content="Modificar Producto" HorizontalAlignment="Left" Margin="70,10,0,0" VerticalAlignment="Top" Width="125" Grid.Column="3" Height="31" Click="ModificarProducto_Click" Background="#FFF9F9F9"/>
-                    <Button x:Name="resumenInventario" Content="Resumen Inventario" Grid.Column="3" HorizontalAlignment="Left" Margin="213,10,0,0" VerticalAlignment="Top" Width="125" Height="31" Click="ResumenInventario_Click" Background="#FFF9F9F9"/>
+                    <Button x:Name="eliminarProducto" Grid.ColumnSpan="4" Content="Eliminar Producto" HorizontalAlignment="Left" Height="31" Margin="125,10,0,0" VerticalAlignment="Top" Width="100" Click="EliminarProducto_Click" Background="#FFF9F9F9" IsEnabled="False"/>
+                    <Button x:Name="modificarProducto" Content="Modificar Producto" HorizontalAlignment="Left" Margin="70,10,0,0" VerticalAlignment="Top" Width="125" Grid.Column="3" Height="31" Click="ModificarProducto_Click" Background="#FFF9F9F9" IsEnabled="False"/>
+                    <Button x:Name="resumenInventario" Content="Resumen Inventario" Grid.Column="3" HorizontalAlignment="Left" Margin="213,10,0,0" VerticalAlignment="Top" Width="125" Height="31" Click="ResumenInventario_Click" Background="#FFF9F9F9" IsEnabled="False"/>
                     <Image x:Name="logoFast" Grid.Column="3" HorizontalAlignment="Left" Height="88" Margin="448,269,0,0" VerticalAlignment="Top" Width="83" Source="iFastCO logo.gif"/>
                     <DataGrid x:Name="dataGridVentas" HorizontalAlignment="Left" Height="311" Margin="19,46,0,0" VerticalAlignment="Top" Width="582" Grid.ColumnSpan="4" SelectionChanged="dataGridVentas_SelectionChanged"/>
                 </Grid>
@@ -55,9 +55,9 @@
                     <TextBox x:Name="nacionalidadUsuario" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="410,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
                     <GroupBox Header="Datos" HorizontalAlignment="Left" Height="213" Margin="29,62,0,0" VerticalAlignment="Top" Width="513" Grid.Column="1"/>
                     <Button x:Name="editarUsuario" Content="Editar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="179,305,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="EditarUsuario_Click" Background="#FFF9F9F9" IsEnabled="False"/>
-                    <Button x:Name="listaUsuario" Content="Lista Usarios" Grid.Column="1" HorizontalAlignment="Left" Margin="293,305,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="ListaUsuario_Click" Background="#FFF9F9F9"/>
-                    <Button Content="Eliminar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="410,305,0,0" VerticalAlignment="Top" Width="96" Height="29" Click="Button_Click" Background="#FFF9F9F9"/>
-                    <Button x:Name="botonAgegarUsuario" Content="Agregar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="55,305,0,0" VerticalAlignment="Top" Width="93" Height="29" Click="BotonAgegarUsuario_Click" Background="#FFF9F9F9"/>
+                    <Button x:Name="listaUsuario" Content="Lista Usarios" Grid.Column="1" HorizontalAlignment="Left" Margin="293,305,0,0" VerticalAlignment="Top" Width="88" Height="29" Click="ListaUsuario_Click" Background="#FFF9F9F9" IsEnabled="False"/>
+                    <Button Content="Eliminar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="410,305,0,0" VerticalAlignment="Top" Width="96" Height="29" Click="Button_Click" Background="#FFF9F9F9" IsEnabled="False"/>
+                    <Button x:Name="botonAgegarUsuario" Content="Agregar Usuario" Grid.Column="1" HorizontalAlignment="Left" Margin="55,305,0,0" VerticalAlignment="Top" Width="93" Height="29" Click="BotonAgegarUsuario_Click" Background="#FFF9F9F9" IsEnabled="False"/>
                     <DatePicker x:Name="dateFechaNacimiento" Grid.Column="1" HorizontalAlignment="Left" Margin="410,88,0,0" VerticalAlignment="Top" Width="120"/>
 
                 </Grid>
