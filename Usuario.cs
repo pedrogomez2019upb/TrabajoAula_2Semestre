@@ -15,6 +15,7 @@ namespace TrabajoAula
         private String direccion;
         private String ciudad;
         private String fechaNacimiento;
+        private String lugarNacimiento;
         private int edad;
         private String departamento;
         private String nacionalidad;
@@ -28,16 +29,19 @@ namespace TrabajoAula
         public int Edad { get => edad; set => edad = value; }
         public string Departamento { get => departamento; set => departamento = value; }
         public string Nacionalidad { get => nacionalidad; set => nacionalidad = value; }
+        public string LugarNacimiento { get => lugarNacimiento; set => lugarNacimiento = value; }
 
         public Usuario() { }
 
-        public Usuario(string nombre,string apellido,string sexo,string ciudad,string fechaNacimiento,int edad,string departamento,string nacionalidad)
+        public Usuario(string nombre,string apellido,string sexo,string direccion,string ciudad,string fechaNacimiento,string lugarNacimiento,int edad,string departamento,string nacionalidad)
         {
             Nombre = nombre;
             Apellido = apellido;
             Sexo = sexo;
+            Direccion = direccion;
             Ciudad = ciudad;
             FechaNacimiento = fechaNacimiento;
+            LugarNacimiento = lugarNacimiento;
             Edad = edad;
             Departamento = departamento;
             Nacionalidad = nacionalidad;
@@ -52,7 +56,7 @@ namespace TrabajoAula
                 string[] datos = line.Split(';');
                 if (datos[0].Equals(this.Nombre))
                 {
-                    Usuario usuarioTemporal = new Usuario(datos[0], datos[1], datos[2], datos[3], datos[4], Int32.Parse(datos[5]), datos[6], datos[7]);
+                    Usuario usuarioTemporal = new Usuario(datos[0], datos[1], datos[2], datos[3], datos[4], datos[5], datos[6], Int32.Parse(datos[7]),datos[8],datos[9]);
                     listaUsuarios.Add(usuarioTemporal);
                 }
                 

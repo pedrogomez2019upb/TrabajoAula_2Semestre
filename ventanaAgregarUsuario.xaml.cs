@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace TrabajoAula
 {
@@ -20,6 +21,7 @@ namespace TrabajoAula
     /// </summary>
     public partial class ventanaAgregarUsuario : Window
     {
+        List<Usuario> listaUsuarios = new List<Usuario>();
         public ventanaAgregarUsuario()
         {
             InitializeComponent();
@@ -93,6 +95,46 @@ namespace TrabajoAula
             {
                 MessageBox.Show("La nacionalidad del usuario no debe estar vacío");
                 return;
+
+            }
+            else
+            {
+                Usuario usuario2 = new Usuario(textboxNombreNew.Text.ToString(), textboxApellidoNew.Text.ToString(), textboxSexoNew.Text.ToString(), textboxDireccionNew.Text.ToString(), textboxCiudadNew.Text.ToString(), fechaNew.Text.ToString(), textboxLugarNacimientoNew.Text.ToString(),Convert.ToInt32(textboxEdadNew.Text),textboxDepartamentoNew.Text.ToString(),textboxDepartamentoNew.Text.ToString());
+                listaUsuarios.Add(usuario2);
+                try
+                {
+                    StreamWriter sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Usuarios.txt", append: true);
+                    sw.WriteLine(usuario2.ToString());
+                    sw.Close();
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Hubo un error con el archivo y no se pudo registrar");
+                }
+                finally
+                {
+
+                    textboxNombreNew.Text = "";
+                    textboxApellidoNew.Text = "";
+                    textboxSexoNew.Text = "";
+                    textboxDireccionNew.Text = "";
+                    textboxCiudadNew.Text = "";
+                    fechaNew.Text = "";
+                    textboxLugarNacimientoNew.Text = "";
+                    textboxLugarNacimientoNew.Text = "";
+                    textboxDepartamentoNew.Text = "";
+
+
+
+
+
+                }
+                MessageBox.Show("El Usuario se agregó con exito.");
+                MainWindow ventanaPrinCreaProducto = new MainWindow();
+                ventanaPrinCreaProducto.Show();
+
+                this.Close();
 
             }
 
