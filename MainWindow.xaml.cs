@@ -23,12 +23,19 @@ namespace TrabajoAula
     {
         Usuario usuario1 = new Usuario();
         private List<Producto> productos1;
+        private List<Usuario> usuario2;
         public MainWindow()
         {
             InitializeComponent();
             //fecha.Text = DateTime.Now.ToString("hh:mm:ss tt");
             llenaLista();
+            //comboboxUsuarios.Items.AddRange(File.ReadAllLines("\\Usuarios.txt"));
+            llenaListaUsuario();
         }
+
+        
+
+
         public void llenaLista()
         {
             string line;
@@ -51,6 +58,51 @@ namespace TrabajoAula
             dataGridVentas.ItemsSource = productos1;
             llenarListBox();
         }
+        public void llenaListaUsuario()
+        {
+            string line;
+            StreamReader lector = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\Usuarios.txt", Encoding.UTF8);
+            usuario2 = new List<Usuario>();
+
+            while ((line = lector.ReadLine()) != null)
+            {
+                Usuario prodTemp = new Usuario(line);
+
+                //MessageBox.Show(line.ToString());
+                //string[] datos = line.Split(',');
+
+                //prodTemp = new Producto(line);
+                usuario2.Add(prodTemp);
+
+            }
+            lector.Close();
+            listboxUsuarios.ItemsSource = null;
+            listboxUsuarios.ItemsSource = usuario2;
+            listboxUsuarios.DisplayMemberPath = "Nombre";
+
+
+        }
+        /*private void cargarUsuarios()//Lectura del archivo "Empleados.txt" con codificación UTF8
+        {
+            string line;
+
+            StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\Usuarios.txt", Encoding.UTF8);
+            List<Usuario> usuariosNew = new List<Usuario>();
+
+            while ((line = sr.ReadLine()) != null)
+            {
+                Usuario empTemporal;
+
+                string[] datos = line.Split(';');
+                switch (datos[0])
+                usuariosNew.Add(empTemporal);
+
+
+
+            }
+            sr.Close();
+        }
+        */
         public void llenarListBox()
         {
 // listBoxVentas.Items.Clear();
@@ -63,6 +115,7 @@ namespace TrabajoAula
 
             }
         }
+
         private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
         {
 
