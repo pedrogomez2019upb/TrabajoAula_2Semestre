@@ -42,13 +42,13 @@ namespace TrabajoAula
                 return;
             }
             
-            if (textboxPassword.Text.Trim().Length == 0)
+            if (string.IsNullOrEmpty(textboxPassword.Password))
             {
                 MessageBox.Show("Por favor revisa la contraseña. Esta no puede estar vacia.");
                 return;
             }
             
-            if (textboxUsuario.Text.Equals(usuario) && textboxPassword.Text.Equals(contrasena))
+            if (textboxUsuario.Text.Equals(usuario) && textboxPassword.Password.Equals(contrasena))
             {
                 MainWindow ventanaPrincipal = new MainWindow();
                 ventanaPrincipal.Show();

@@ -14,7 +14,7 @@
         <Button x:Name="botonVentanaLogin" Content="Login" HorizontalAlignment="Left" Margin="104,295,0,0" VerticalAlignment="Top" Width="74" Click="BotonVentanaLogin_Click" KeyDown="BotonVentanaLogin_KeyDown" DragEnter="botonVentanaLogin_DragEnter"/>
         <Image HorizontalAlignment="Left" Height="184" Margin="51,0,0,0" VerticalAlignment="Top" Width="184" Source="iFastCO logo.gif"/>
         <Button x:Name="buttonCerrarLogin" Content="Cerrar" HorizontalAlignment="Left" Margin="104,350,0,0" VerticalAlignment="Top" Width="74" Click="ButtonCerrarLogin_Click"/>
-        <TextBox x:Name="textboxPassword" HorizontalAlignment="Left" Height="23" Margin="84,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="textboxPassword" HorizontalAlignment="Left" Margin="84,247,0,0" VerticalAlignment="Top" Width="120" Height="24"/>
 
     </Grid>
 </Window>

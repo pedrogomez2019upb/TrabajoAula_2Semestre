@@ -46,7 +46,7 @@ namespace TrabajoAula
         public void cargarUsuarios()
         {
             string line;
-            StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\Usuarios.txt" + Encoding.UTF8); 
+            StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\Usuarios.txt" , Encoding.UTF8); 
             while ((line=sr.ReadLine())!=null)
                 {
                 string[] datos = line.Split(';');
@@ -56,7 +56,6 @@ namespace TrabajoAula
                     listaUsuarios.Add(usuarioTemporal);
                 }
                 
-                sr.Close();
 
                 }
         }

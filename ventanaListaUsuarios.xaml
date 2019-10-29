@@ -11,7 +11,7 @@
         <Button x:Name="botonSeleccionarUsuario" Content="Seleccionar" HorizontalAlignment="Left" Margin="56,152,0,0" VerticalAlignment="Top" Width="76" Click="BotonSeleccionarUsuario_Click"/>
         <Button x:Name="botonVolverLista" Content="Volver" HorizontalAlignment="Left" Margin="206,152,0,0" VerticalAlignment="Top" Width="76" Click="BotonVolverLista_Click"/>
         <Label Content="Por favor selecciona el usuario:" HorizontalAlignment="Left" Margin="26,67,0,0" VerticalAlignment="Top" FontStyle="Italic"/>
-        <ComboBox x:Name="comboUsuarios" HorizontalAlignment="Left" Margin="26,98,0,0" VerticalAlignment="Top" Width="291"/>
+        <ComboBox x:Name="comboUsuarios" HorizontalAlignment="Left" Margin="26,98,0,0" VerticalAlignment="Top" Width="291" SelectionChanged="comboUsuarios_SelectionChanged"/>
 
     </Grid>
 </Window>

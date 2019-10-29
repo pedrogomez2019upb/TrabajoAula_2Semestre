@@ -20,9 +20,10 @@ namespace TrabajoAula
     /// </summary>
     public partial class ventanaListaUsuarios : Window
     {
+        Usuario usuario1 = new Usuario();
         private void mostrarUsuarios()
         {
-            Usuario usuario1 = new Usuario();
+            
             List<Usuario> usuarios = usuario1.recibirUsuarios();
             comboUsuarios.Items.Clear();
             for (int i = 0; i < usuarios.Count; i++)
@@ -37,8 +38,12 @@ namespace TrabajoAula
         {
             InitializeComponent();
             mostrarUsuarios();
+            cargarUsuarios();
         }
-
+        public void cargarUsuarios()
+        {
+            usuario1.cargarUsuarios();
+        }
         private void BotonSeleccionarUsuario_Click(object sender, RoutedEventArgs e)
         {
 
@@ -49,6 +54,11 @@ namespace TrabajoAula
             MainWindow ventanaPrincipalVolverLista = new MainWindow();
             ventanaPrincipalVolverLista.Show();
             this.Hide();
+        }
+
+        private void comboUsuarios_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
