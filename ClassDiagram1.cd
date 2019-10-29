@@ -40,7 +40,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="TrabajoAula.MainWindow" BaseTypeListCollapsed="true">
-    <Position X="8.25" Y="0.5" Width="1.5" />
+    <Position X="6" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAACABACBBAAAAAAAKEAABAAAAAwAAAgAiAEAgA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
@@ -56,7 +56,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="TrabajoAula.Producto">
-    <Position X="6" Y="2.75" Width="1.5" />
+    <Position X="8.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABBACAAAQAgCEAAABgAARAQAAEQAAAAAAAAAAAAQ=</HashCode>
       <FileName>Producto.cs</FileName>
@@ -71,9 +71,9 @@
     <Lollipop Position="0.231" Collapsed="true" />
   </Class>
   <Class Name="TrabajoAula.Usuario">
-    <Position X="10" Y="3.25" Width="1.5" />
+    <Position X="11.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAAASAIACEgCAAgCgAAAAoAgAAAAIAABAAAAA=</HashCode>
+      <HashCode>EAAAAAAAAASAIAiEgCAAgCgAAAAoAgAAAAIAABAgABA=</HashCode>
       <FileName>Usuario.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -102,7 +102,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="TrabajoAula.Properties.Resources">
-    <Position X="10" Y="0.5" Width="1.5" />
+    <Position X="4" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
