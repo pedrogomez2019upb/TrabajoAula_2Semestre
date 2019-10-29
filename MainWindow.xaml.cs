@@ -58,6 +58,25 @@ namespace TrabajoAula
             dataGridVentas.ItemsSource = productos1;
             llenarListBox();
         }
+        private void mostrarUsuarioSelect()
+        {
+            if (listboxUsuarios.SelectedIndex > -1)
+            {
+                Usuario usuario_selecccionado = usuario2.ElementAt(listboxUsuarios.SelectedIndex);
+
+
+                nombreUsuario.Text = usuario_selecccionado.Nombre;
+                apellidoUsuario.Text = usuario_selecccionado.Apellido;
+                sexoUsuario.Text = usuario_selecccionado.Sexo;
+                direccionUsuario.Text = usuario_selecccionado.Direccion;
+                dateFechaNacimiento.Text = usuario_selecccionado.FechaNacimiento;
+                lugarnacimientoUsuario.Text = usuario_selecccionado.LugarNacimiento;
+                edadUsuario.Text = usuario_selecccionado.Edad.ToString();
+                departamentoUsuario.Text = usuario_selecccionado.Departamento;
+                nacionalidadUsuario.Text = usuario_selecccionado.Nacionalidad;
+                ciudadUsuario.Text = usuario_selecccionado.LugarNacimiento;
+            }
+        }
         public void llenaListaUsuario()
         {
             string line;
@@ -209,6 +228,11 @@ namespace TrabajoAula
         private void dataGridVentas_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void listboxUsuarios_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            mostrarUsuarioSelect();
         }
     }
 }
