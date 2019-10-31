@@ -54,7 +54,7 @@ namespace TrabajoAula
             StreamReader sr = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\Usuarios.txt" , Encoding.UTF8); 
             while ((line=sr.ReadLine())!=null)
                 {
-                string[] datos = line.Split(';');
+                string[] datos = line.Split(',');
                 if (datos[0].Equals(this.Nombre))
                 {
                     Usuario usuarioTemporal = new Usuario(datos[0], datos[1], datos[2], datos[3], datos[4], datos[5], datos[6], Double.Parse(datos[7]),datos[8],datos[9]);
@@ -72,7 +72,7 @@ namespace TrabajoAula
         public Usuario(string line)
         {
 
-            string[] datos = line.Split(';');
+            string[] datos = line.Split(',');
             Nombre = datos[0];
             Apellido = datos[1];
             Sexo = datos[2];
@@ -85,5 +85,10 @@ namespace TrabajoAula
 
 
         }
+        public override string ToString()
+        {
+            return string.Format("{0},{1},{2},{3},{4},{5},{6},{7},{8}", Nombre, Apellido, Sexo, Direccion, FechaNacimiento, LugarNacimiento, Edad, Departamento, Nacionalidad);
+        }
+
     }
 }
